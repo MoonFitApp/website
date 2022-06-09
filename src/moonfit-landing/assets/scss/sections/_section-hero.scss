@@ -1,7 +1,7 @@
 .section-hero {
+	z-index: 1;
 	padding: 280px 0 281px;
-	overflow: hidden;
-	background: url(../images/hero-bg.jpg) no-repeat top center;
+	background: url(../images/hero-bg.jpg) no-repeat center;
 	background-size: cover;
 
 	.button-group {
@@ -117,24 +117,20 @@
 	}
 }
 
-@include media-breakpoint-down(lg) {
-	.section-hero {
-		.section-header {
-			margin: 0;
-		}
-	}
-}
-
 @include media-breakpoint-down(md) {
 	.section-hero {
-		padding: 100px 0 120px;
+		padding: 150px 0;
 
 		.section-title {
-			font-size: 46px;
+			font-size: 32px;
 		}
 
 		.section-description {
-			font-size: 18px;
+			font-size: 32px;
+		}
+
+		.button-group {
+			margin-top: 30px;
 		}
 	}
 
@@ -153,10 +149,9 @@
 
 @include media-breakpoint-down(sm) {
 	.section-hero {
-		padding: 110px 0 120px;
+		padding: 120px 0;
 
 		.button-group {
-			justify-content: center;
 			margin-top: 20px;
 		}
 
@@ -165,30 +160,28 @@
 		}
 
 		.section-title {
-			font-size: 36px;
-			margin: 0 0 10px;
-		}
-
-		.section-header {
-			margin: 0 0 30px;
-			text-align: center;
-		}
-
-		.section-header-inner {
-			margin: 0 auto;
+			font-size: 28px;
 		}
 
 		.section-description {
-			font-size: 16px;
-			line-height: 26px;
+			font-size: 28px;
 		}
+
+		.hero-image img {
+			max-width: 35vw;
+		}
+	}
+
+	.section-hero-shape-meteor {
+		bottom: 0;
 	}
 }
 
 @include media-breakpoint-down(xs) {
 	.section-hero {
-		.section-title {
-			font-size: 30px;
+		.section-description {
+			font-size: 24px;
+			line-height: 28px;
 		}
 
 		.button-group {

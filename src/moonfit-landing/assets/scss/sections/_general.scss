@@ -305,7 +305,7 @@
 @media screen and (max-width: 1440px) {
 	.section-header-big {
 		.section-sub-title {
-			font-size: 34px;
+			font-size: 36px;
 		}
 	}
 }
@@ -316,7 +316,7 @@
 	}
 
 	.section-title {
-		font-size: 30px;
+		font-size: 32px;
 	}
 
 	.section-header-small .section-title {
@@ -325,7 +325,7 @@
 
 	.section-header-big {
 		.section-sub-title {
-			font-size: 34px;
+			font-size: 32px;
 		}
 	}
 }
@@ -336,12 +336,19 @@
 	}
 
 	.section-title {
-		font-size: 26px;
+		font-size: 28px;
 	}
 
 	.section-description {
-		font-size: 18px;
-		line-height: 28px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.section-header-beside {
+		.section-description {
+			font-size: 16px;
+			line-height: 26px;
+		}
 	}
 
 	.section-header-small .section-title {
@@ -358,7 +365,7 @@
 		}
 
 		.section-sub-title {
-			font-size: 30px;
+			font-size: 28px;
 		}
 	}
 }
@@ -369,7 +376,7 @@
 	}
 
 	.section-title {
-		font-size: 22px;
+		font-size: 24px;
 	}
 
 	.section-description {
@@ -381,6 +388,10 @@
 		&:not(.section-header-beside ) {
 			margin: 0 0 35px;
 		}
+	}
+
+	.section-header-inner {
+		max-width: 540px;
 	}
 
 	.section-header-small .section-title {
@@ -396,8 +407,13 @@
 			font-size: 18px;
 		}
 
+		.section-description {
+			font-size: 16px;
+			line-height: 26px;
+		}
+
 		.section-sub-title {
-			font-size: 26px;
+			font-size: 24px;
 		}
 
 		.section-description-wrap {
@@ -429,6 +445,11 @@
 	.section-header-big {
 		.section-header-inner {
 			max-width: 470px;
+		}
+
+		.section-description {
+			font-size: 14px;
+			line-height: 24px;
 		}
 	}
 }

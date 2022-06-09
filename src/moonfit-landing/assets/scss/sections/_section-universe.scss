@@ -44,19 +44,22 @@
 }
 
 @include media-breakpoint-down(sm) {
-	.section-story {
-		padding: 31px 0 60px;
-
+	.section-universe {
 		.image-group {
 			text-align: center;
+			margin: 0 0 20px;
 
-			.main-image {
-				img {
-					max-width: 60vw;
-				}
+			.img-main {
+				max-width: 60vw;
 			}
 
 			.shape-diamond-green {
+				img {
+					max-width: 60px;
+				}
+			}
+
+			.shape-diamond-purple {
 				img {
 					max-width: 60px;
 				}
@@ -75,6 +78,11 @@
 			.section-header-inner {
 				margin: 0 auto;
 			}
+		}
+
+		.button-group {
+			justify-content: center;
+			margin-top: 25px;
 		}
 	}
 }

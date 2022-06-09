@@ -47,7 +47,7 @@
 
 @include media-breakpoint-down(md) {
 	.partner-item {
-		min-height: 100px;
+		min-height: 80px;
 	}
 }
 
@@ -59,6 +59,14 @@
 	.section-featured-in {
 		.section-call-out-action {
 			margin-top: 40px;
+		}
+
+		.section-header {
+			margin: 0 0 20px;
+		}
+
+		.section-header-inner {
+			max-width: 540px;
 		}
 	}
 }

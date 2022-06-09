@@ -126,11 +126,25 @@
 	.footer-social-networks {
 		margin: 80px 0 0;
 	}
+
+	.footer-big-heading {
+		font-size: 44px;
+	}
 }
 
 @include media-breakpoint-down(lg) {
 	.site-footer {
 		padding: 170px 0 40px;
+	}
+
+	.footer-big-heading {
+		font-size: 40px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.footer-big-heading {
+		font-size: 36px;
 	}
 }
 
@@ -157,6 +171,10 @@
 	.footer-widget-title {
 		font-size: 21px;
 	}
+
+	.footer-big-heading {
+		font-size: 30px;
+	}
 }
 
 @include media-breakpoint-down(xs) {
@@ -182,5 +200,9 @@
 	.footer-menu a {
 		font-size: 16px;
 		padding: 3px 0;
+	}
+
+	.footer-big-heading {
+		font-size: 24px;
 	}
 }

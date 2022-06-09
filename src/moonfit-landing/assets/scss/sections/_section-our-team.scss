@@ -17,10 +17,12 @@
 
 	.avatar {
 		position: relative;
+		width: var(--avatar-border-size, 164px);
+		max-width: 84%;
 	}
 
 	.avatar-border {
-		width: var(--avatar-border-size, 164px);
+		width: 100%;
 
 		* {
 			transition: all .25s linear;
@@ -33,6 +35,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: var(--avatar-fill-size, 142px);
+		max-width: 86.5%;
 	}
 
 	.name {
@@ -81,5 +84,18 @@
 		img {
 			max-width: none;
 		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.section-our-team {
+		padding: 200px 0 0;
+	}
+}
+
+
+@include media-breakpoint-down(sm) {
+	.section-our-team {
+		padding: 150px 0 0;
 	}
 }

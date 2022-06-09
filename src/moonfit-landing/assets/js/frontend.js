@@ -275,7 +275,6 @@
 			scrollTo();
 			//initVideoPopups();
 			initSliders();
-			initGrids();
 		} );
 
 		$( window ).on( 'load', function() {
@@ -329,12 +328,6 @@
 			$( '.tm-swiper' ).each( function() {
 				$( this ).MoonfitSwiper();
 			} );
-		}
-
-		function initGrids() {
-			if ( $.fn.MoonfitGridLayout() ) {
-				$( '.block-grid' ).MoonfitGridLayout();
-			}
 		}
 
 		function initSectionEffectSnow() {
