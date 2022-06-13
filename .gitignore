@@ -52,3 +52,4 @@ package-lock.json
 src/subwallet/assets/css/*.css
 src/subwallet/assets/js/*.js
 sourcemap/
+style.css
