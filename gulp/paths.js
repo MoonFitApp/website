@@ -1,7 +1,7 @@
 'use strict';
 var glob      = require( 'glob' ),
     files     = glob( 'src/*', { sync: true } ),
-    mainTheme = files[ 0 ].replace( 'src/', '' );
+    mainTheme = files[ 1 ].replace( 'src/', '' );
 
 module.exports = {
 	mainTheme: mainTheme,
