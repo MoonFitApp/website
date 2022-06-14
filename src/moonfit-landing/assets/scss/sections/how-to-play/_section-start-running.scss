@@ -1,0 +1,21 @@
+.section-h2p-start-running {
+	background: url(../images/how-to-play/start-running-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+	padding: 85px 0 200px;
+
+	.section-header {
+		margin: 0 0 83px;
+	}
+
+	.image-frame-on-hover {
+		width: 330px;
+		max-width: 100%;
+		margin: 0 auto 30px;
+	}
+
+	.section-shape-radial-circle {
+		left: 0;
+		top: 0;
+		transform: translate(-58%, 30%);
+	}
+}
