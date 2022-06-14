@@ -315,7 +315,8 @@
 	position: fixed;
 }
 
-.section-content {
+.section-content,
+.section-footer {
 	position: relative;
 	z-index: 11;
 }

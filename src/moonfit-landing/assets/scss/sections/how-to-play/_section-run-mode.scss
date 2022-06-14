@@ -11,3 +11,29 @@
 		margin: 113px 0 0;
 	}
 }
+
+@include media-breakpoint-down(sm) {
+	.section-h2p-run-mode {
+		padding: 90px 0 0;
+
+		.section-header {
+			margin: 0 0 20px;
+		}
+
+		.section-header-inner {
+			margin: 0 auto;
+
+			.section-title-steps {
+				justify-content: center;
+			}
+		}
+
+		.section-description {
+			text-align: center;
+		}
+
+		.slider-screenshot {
+			margin: 50px 0 0;
+		}
+	}
+}

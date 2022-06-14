@@ -1,11 +1,7 @@
 .section-h2p-start-running {
 	background: url(../images/how-to-play/start-running-bg.jpg) no-repeat bottom center;
 	background-size: cover;
-	padding: 85px 0 200px;
-
-	.section-header {
-		margin: 0 0 83px;
-	}
+	padding: 120px 0 200px;
 
 	.image-frame-on-hover {
 		width: 330px;
@@ -17,5 +13,25 @@
 		left: 0;
 		top: 0;
 		transform: translate(-58%, 30%);
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.section-h2p-start-running {
+		.section-header {
+			margin: 0 0 83px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.section-h2p-start-running {
+		padding: 100px 0 70px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.section-h2p-start-running {
+		padding: 60px 0 80px;
 	}
 }

@@ -42,24 +42,40 @@
 	.shape-token-mfr {
 		bottom: 12%;
 		right: 0;
+
+		img {
+			max-width: 7vw;
+		}
 	}
 
 	.shape-token-mfr-2 {
 		z-index: 1;
 		bottom: 37%;
 		left: -42px;
+
+		img {
+			max-width: 8vw;
+		}
 	}
 
 	.shape-token-mfg {
 		z-index: 1;
 		top: 38%;
 		right: -100px;
+
+		img {
+			max-width: 6vw;
+		}
 	}
 
 	.shape-diamond-purple {
 		z-index: 1;
 		bottom: 0;
 		left: 0;
+
+		img {
+			max-width: 6vw;
+		}
 	}
 }
 
@@ -140,6 +156,10 @@
 	.section-h2p-hero {
 		.section-title {
 			font-size: 26px;
+		}
+
+		.shape-token-mfg {
+			right: 0;
 		}
 	}
 }

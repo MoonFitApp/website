@@ -17,11 +17,12 @@
 		left: var(--border-size);
 		border-radius: inherit;
 		background: $body-bg-color;
+		z-index: 1;
 	}
 
 	.content {
 		position: relative;
-		z-index: 1;
+		z-index: 2;
 	}
 
 	.title {
