@@ -43,7 +43,8 @@
 	},
 	"scripts": {
 		"push:themes": "rsync -avz -e 'ssh -p 2222' /Volumes/DATA/repos/html-moonfit/src/moonfit/* www-data@178.128.57.30:/opt/easyengine/sites/project.thememove.com/app/htdocs/moonfit --delete",
-		"package": "find . -name '.DS_Store' -type f -delete && gulp javascript && gulp sass:full && gulp zip"
+		"package": "find . -name '.DS_Store' -type f -delete && gulp javascript && gulp sass:full && gulp zip",
+		"package:linux": "gulp javascript && gulp sass:full && gulp zip"
 	},
 	"dependencies": {
 		"css-size": "^4.0.1",
