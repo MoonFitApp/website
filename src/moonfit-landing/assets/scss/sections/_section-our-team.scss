@@ -62,6 +62,10 @@
 			width: 100%;
 		}
 	}
+
+	.section-call-out-action {
+		text-align: center;
+	}
 }
 
 .advisors-slider {
@@ -92,7 +96,6 @@
 		padding: 200px 0 0;
 	}
 }
-
 
 @include media-breakpoint-down(sm) {
 	.section-our-team {

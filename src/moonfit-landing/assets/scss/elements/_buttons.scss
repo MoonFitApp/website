@@ -103,7 +103,7 @@ input[type='submit'],
 	}
 }
 
-.button-primary{
+.button-primary {
 	--mg-button-text: #{$button-text};
 	--mg-button-border: #{$primary-color};
 	--mg-button-background: #{$primary-color};
@@ -113,6 +113,19 @@ input[type='submit'],
 	--mg-button-text: #fff;
 	--mg-button-border: #{$secondary-color};
 	--mg-button-background: #{$secondary-color};
+}
+
+.button-subwallet {
+	--mg-button-text: #fff;
+	--mg-button-border: #004bff;
+	--mg-button-background: #004bff;
+	--mg-button-hover-text: #fff;
+	--mg-button-hover-border: #004bff;
+	--mg-button-hover-background: #004bff;
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 500;
+	min-height: 56px;
+	padding: 0 var(--button-hoz-padding);
 }
 
 @include media-breakpoint-up(md) {
