@@ -1914,6 +1914,24 @@ input[type='submit'],
     min-height: 45px;
     line-height: 26px;
     font-size: 18px; }
+  .button .button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .button .button-text.text-normal {
+      text-transform: none; }
+    .button .button-text i.icon-right {
+      margin-left: 8px;
+      font-size: 24px; }
+  .button .loading {
+    width: 25px;
+    height: 25px;
+    border: 4px solid #fff;
+    border-radius: 100%; }
+  .button .open {
+    border-top: 5px solid transparent;
+    -webkit-animation: load-animate infinite linear 1s;
+    animation: load-animate infinite linear 1s; }
 
 .button-image:hover img {
   transform: scale3d(1.05, 1.05, 1.05); }
@@ -1955,6 +1973,24 @@ input[type='submit'],
     --button-hoz-padding: 35px;
     line-height: 26px;
     min-height: 55px; } }
+
+@-webkit-keyframes load-animate {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.35; }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes load-animate {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.35; }
+  100% {
+    transform: rotate(360deg); } }
 
 ::selection {
   -webkit-text-fill-color: #fff;
@@ -5616,6 +5652,54 @@ body {
     top: 15%;
     transform: rotate3d(0, 1, 1, 48deg) skew(15deg);
     filter: blur(1px); }
+  .section-connect-subwallet .section-call-out-action {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-connect-subwallet .section-call-out-action .connected-wallet-info-card {
+      background-color: #020722;
+      width: 970px;
+      padding: 31px 50px 50px 50px;
+      color: #FFF;
+      position: relative;
+      background-clip: padding-box;
+      border: solid 3px transparent;
+      border-radius: 1em; }
+      .section-connect-subwallet .section-call-out-action .connected-wallet-info-card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -3px;
+        border-radius: inherit;
+        background: linear-gradient(to right, #4CCBC9, #E4007B); }
+      .section-connect-subwallet .section-call-out-action .connected-wallet-info-card .card-title {
+        font-family: 'Race Sport', serif;
+        color: #4CCBC9;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-bottom: 25px; }
+      .section-connect-subwallet .section-call-out-action .connected-wallet-info-card .card-body .wallet-address {
+        margin-bottom: 42px; }
+        .section-connect-subwallet .section-call-out-action .connected-wallet-info-card .card-body .wallet-address #wallet-account-address {
+          padding: 17px 20px 23px;
+          margin-left: 5px;
+          background-color: #21063C;
+          color: #FFF; }
+        .section-connect-subwallet .section-call-out-action .connected-wallet-info-card .card-body .wallet-address #logout-btn {
+          min-width: unset;
+          margin-left: 15px; }
+  .section-connect-subwallet #gleam-competition {
+    margin-top: 50px; }
+    .section-connect-subwallet #gleam-competition .e-widget-wrapper iframe {
+      width: 540px;
+      border-radius: 8px; }
+    .section-connect-subwallet #gleam-competition .e-widget-preloader {
+      background: transparent; }
 
 @media screen and (max-width: 1400px) {
   .section-connect-subwallet .section-title {

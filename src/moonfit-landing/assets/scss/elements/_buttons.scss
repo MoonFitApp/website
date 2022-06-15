@@ -76,6 +76,34 @@ input[type='submit'],
 		line-height: 26px;
 		font-size: 18px;
 	}
+
+	.button-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&.text-normal {
+			text-transform: none;
+		}
+
+		i.icon-right {
+			margin-left: 8px;
+			font-size: 24px;
+		}
+	}
+
+	.loading {
+		width: 25px;
+		height: 25px;
+		border: 4px solid #fff;
+		border-radius: 100%;
+	}
+
+	.open {
+		border-top: 5px solid transparent;
+		-webkit-animation: load-animate infinite linear 1s;
+		animation: load-animate infinite linear 1s;
+	}
 }
 
 .button-image {
@@ -137,3 +165,30 @@ input[type='submit'],
 		}
 	}
 }
+
+@-webkit-keyframes load-animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+		opacity: 0.35;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes load-animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+		opacity: 0.35;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+

@@ -14,6 +14,13 @@
       "bothVersion": true
     },
     {
+      "name": "giveaway-event",
+      "files": [
+        "src/moonfit-landing/assets/js-code/giveaway-event.js"
+      ],
+      "bothVersion": true
+    },
+    {
       "name": "home-chart",
       "files": [
         "src/moonfit-landing/assets/js-code/home-chart.js"
