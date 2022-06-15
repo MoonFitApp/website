@@ -2,6 +2,7 @@
 	background: url(../images/footer-bg.jpg) no-repeat top center;
 	background-size: cover;
 	padding: 287px 0 70px;
+	text-align: center;
 
 	.button-group {
 		justify-content: center;
@@ -16,7 +17,19 @@
 .footer-big-heading {
 	font-size: 48px;
 	line-height: 1.25;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 82%;
+}
+
+.footer-description-wrap {
+	margin: 9px 0 43px;
+}
+
+.footer-description {
+	font-size: 20px;
+	line-height: 1.5;
+	max-width: 550px;
+	margin: 0 auto;
 }
 
 .footer-widget-title {
@@ -188,6 +201,11 @@
 	.footer-big-heading {
 		font-size: 36px;
 	}
+
+	.footer-description {
+		font-size: 18px;
+		line-height: 26px;
+	}
 }
 
 @include media-breakpoint-down(sm) {
@@ -216,6 +234,15 @@
 
 	.footer-big-heading {
 		font-size: 30px;
+	}
+
+	.footer-description-wrap {
+		margin: 9px 0 20px;
+	}
+
+	.footer-description {
+		font-size: 16px;
+		line-height: 26px;
 	}
 }
 
@@ -246,5 +273,10 @@
 
 	.footer-big-heading {
 		font-size: 24px;
+	}
+
+	.footer-description {
+		font-size: 14px;
+		line-height: 24px;
 	}
 }

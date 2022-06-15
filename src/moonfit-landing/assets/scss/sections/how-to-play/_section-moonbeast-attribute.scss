@@ -124,6 +124,12 @@
 	}
 }
 
+@include media-breakpoint-down(lg) {
+	.section-moonbeast-attribute {
+		padding: 120px 0 0;
+	}
+}
+
 @include media-breakpoint-down(md) {
 	.section-moonbeast-attribute {
 		.image-group {
@@ -183,6 +189,8 @@
 
 @include media-breakpoint-down(sm) {
 	.section-moonbeast-attribute {
+		padding: 100px 0 0;
+
 		.section-header {
 			margin: 0 0 20px !important;
 		}
