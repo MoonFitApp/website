@@ -28,6 +28,8 @@
 }
 
 .roadmap-background {
+	--heading-size: 24px;
+	--text-size: 16px;
 	position: relative;
 	width: 1920px;
 	left: 50%;
@@ -240,7 +242,7 @@
 
 			.item-wrapper {
 				h3 {
-					font-size: 24px;
+					font-size: var(--heading-size);
 					line-height: 36px;
 					color: $primary-color;
 					margin: 0;
@@ -253,7 +255,7 @@
 					li {
 						margin: 0;
 						list-style: none;
-						font-size: 16px;
+						font-size: var(--text-size);
 						line-height: 26px;
 						padding: 0 0 0 22px;
 						position: relative;
@@ -342,6 +344,8 @@
 	}
 
 	.roadmap-background {
+		--heading-size: 22px;
+		--text-size: 15px;
 		width: 1440px;
 
 		.roadmap-dot-light {
