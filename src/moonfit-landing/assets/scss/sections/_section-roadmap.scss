@@ -340,7 +340,7 @@
 
 @media (max-width: 1500px) {
 	.block-roadmap-wrap {
-		padding: 280px 0 0;
+		padding: 254px 0 0;
 	}
 
 	.roadmap-background {
@@ -417,7 +417,7 @@
 
 			&.item-4 {
 				left: 635px;
-				top: -120px;
+				top: -96px;
 			}
 
 			&.item-5 {
@@ -426,7 +426,7 @@
 			}
 
 			&.item-6 {
-				top: -280px;
+				top: -254px;
 				right: 182px;
 			}
 		}
@@ -502,7 +502,7 @@
 
 			&.item-4 {
 				left: 567px;
-				top: -125px;
+				top: -110px;
 			}
 
 			&.item-5 {
@@ -511,7 +511,7 @@
 			}
 
 			&.item-6 {
-				top: -285px;
+				top: -259px;
 				right: 168px;
 			}
 		}
@@ -528,6 +528,8 @@
 	}
 
 	.roadmap-background {
+		--heading-size: 18px;
+
 		width: 100%;
 
 		.roadmap-road {
