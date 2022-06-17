@@ -103,6 +103,11 @@
 			margin-bottom: 0;
 		}
 	}
+
+	a {
+		@extend %LinkTransition02;
+		color: $primary-color;
+	}
 }
 
 .section-footer-description {
