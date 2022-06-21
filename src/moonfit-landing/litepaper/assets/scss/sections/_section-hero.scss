@@ -1,0 +1,167 @@
+.section-hero {
+	padding: 142px 0 149px;
+	overflow: hidden;
+	background: url(../images/hero-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+
+	.button-group {
+		--gutter-x: 20px;
+		margin-top: 31px;
+	}
+
+	.button {
+		--button-hoz-padding: 15px;
+		min-width: 180px;
+	}
+
+	.section-header {
+		margin-bottom: 180px;
+	}
+
+	.section-header-inner {
+		max-width: 520px;
+	}
+
+	.section-title {
+		font-size: 66px;
+		line-height: 1.154;
+	}
+
+	.section-description-wrap {
+		margin: 9px 0 0;
+	}
+
+	.section-description {
+		font-size: 24px;
+		text-transform: none;
+		line-height: 32px;
+		color: #fff;
+	}
+
+	.hero-image-wrap {
+		margin: 0 -126px 0 0;
+	}
+}
+
+.section-hero-shape-meteor {
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1440px) {
+	.section-hero {
+		padding: 120px 0;
+
+		.section-header {
+			margin: 0 0 100px;
+		}
+
+		.section-title {
+			font-size: 56px;
+			line-height: 1.285;
+		}
+
+		.hero-image-wrap {
+			margin: 0 -60px 0 0;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.section-hero {
+		.section-header {
+			margin: 0;
+		}
+
+		.hero-image-wrap {
+			margin: 0;
+		}
+
+		.section-description {
+			font-size: 21px;
+			line-height: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.section-hero {
+		padding: 100px 0 120px;
+
+		.section-title {
+			font-size: 46px;
+		}
+
+		.section-description {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+
+	.section-hero-shape-meteor {
+		bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.section-hero {
+		.button {
+			min-width: 160px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.section-hero {
+		padding: 110px 0 120px;
+
+		.button-group {
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		.button {
+			min-width: 150px;
+		}
+
+		.section-title {
+			font-size: 36px;
+			margin: 0 0 10px;
+		}
+
+		.section-header {
+			margin: 0 0 30px;
+			text-align: center;
+		}
+
+		.section-header-inner {
+			margin: 0 auto;
+		}
+
+		.section-description {
+			font-size: 16px;
+			line-height: 26px;
+		}
+
+		.hero-image-wrap {
+			text-align: center;
+
+			img {
+				max-width: 60vw;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.section-hero {
+		.section-title {
+			font-size: 30px;
+		}
+
+		.button-group {
+			--gutter-x: 14px;
+		}
+	}
+}

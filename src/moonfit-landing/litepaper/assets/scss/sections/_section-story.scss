@@ -1,0 +1,60 @@
+.section-story {
+	padding: 61px 0 60px;
+
+	.shape-diamond-green {
+		z-index: 2;
+		top: 5%;
+		right: 32%;
+
+		img {
+			max-width: 8vw;
+		}
+	}
+
+	.shape-diamond-red {
+		z-index: 2;
+		top: 42%;
+		right: 15%;
+
+		img {
+			max-width: 6vw;
+			filter: drop-shadow(0 0 10px rgba(240, 72, 159, .9));
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.section-story {
+		padding: 31px 0 60px;
+
+		.image-group {
+			text-align: center;
+
+			.main-image {
+				img {
+					max-width: 60vw;
+				}
+			}
+
+			.shape-diamond-green {
+				img {
+					max-width: 60px;
+				}
+			}
+
+			.shape-diamond-red {
+				img {
+					max-width: 40px;
+				}
+			}
+		}
+
+		.section-header {
+			text-align: center;
+
+			.section-header-inner {
+				margin: 0 auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+.section-gameplay {
+	padding: 30px 0 0;
+
+	.shape-diamond-purple {
+		z-index: 2;
+		top: 18%;
+		right: 1%;
+
+		img {
+			max-width: 8vw;
+		}
+	}
+
+	.image-group {
+		text-align: right;
+	}
+}
+
+.block-game-feature {
+	@extend %NormalTransition;
+	border-radius: 10px;
+	--outline-size: 0;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: inherit;
+		background: url(../images/frame-bg.png) no-repeat center;
+		background-size: cover;
+		opacity: .7;
+	}
+
+	&:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 4px 50px rgba(161, 07, 216, .5);
+	}
+}
+
+.block-game-feature-content {
+	position: relative;
+	z-index: 1;
+	padding: 46px 25px 30px;
+	min-height: 200px;
+}
+
+.block-game-feature-icon {
+	position: absolute;
+	bottom: 100%;
+	left: 25px;
+	transform: translateY(21px);
+}
+
+.block-game-feature-title {
+	font-size: 22px;
+	line-height: 26px;
+	margin: 0;
+}
+
+.block-game-feature-description {
+	font-size: 18px;
+	line-height: 26px;
+	margin: 5px 0 0;
+}
+
+.slider-game-features {
+	--slides-width: 350px;
+
+	.swiper-container {
+		padding: 67px 0 50px; // Icon Overlap + Hover Transform
+	}
+
+	> .swiper-inner > .swiper-container.swiper-container-horizontal > .swiper-wrapper[data-active-items='auto'] {
+		> .swiper-slide {
+			width: 350px !important;
+			max-width: 90vw;
+		}
+	}
+
+	.swiper-pagination-container {
+		margin: 8px 0 0;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.section-gameplay {
+		.image-group {
+			text-align: center;
+		}
+
+		.img-main {
+			max-width: 60vw;
+		}
+
+		.section-header {
+			text-align: center;
+
+			.section-header-inner {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.block-game-feature-title {
+		font-size: 18px;
+	}
+
+	.block-game-feature-icon {
+		left: 20px;
+	}
+
+	.block-game-feature-content {
+		padding: 45px 20px 25px;
+	}
+
+	.block-game-feature-description {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.slider-game-features > .swiper-inner > .swiper-container.swiper-container-horizontal > .swiper-wrapper[data-active-items='auto'] {
+		> .swiper-slide {
+			width: 290px !important;
+		}
+	}
+}

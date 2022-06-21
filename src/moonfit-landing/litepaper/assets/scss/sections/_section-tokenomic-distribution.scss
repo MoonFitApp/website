@@ -1,0 +1,72 @@
+.section-tokenomic-distribution {
+	padding: 164px 0 0;
+
+	.section-shape-blur-dots {
+		top: 0;
+		right: 0;
+		transform: translate(0, -38%);
+
+		img {
+			max-width: 61vw;
+		}
+	}
+
+	.section-shape-blur-dots2 {
+		bottom: 20%;
+		left: 0;
+
+		img {
+			max-width: 31vw;
+		}
+	}
+}
+
+.tokenomic-distribution-chart {
+	position: relative;
+	max-width: 100%;
+	//min-height: 600px;
+	margin: 0 auto 50px;
+}
+
+.tokenomic-distribution-chart:before {
+	content: '';
+	padding-top: 65%;
+	display: block;
+}
+
+.tokenomic-distribution-chart > div {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+}
+
+.tokenomic-chart-month {
+	position: relative;
+	max-width: 100%;
+	//min-height: 600px;
+	margin: 0 auto;
+}
+
+.tokenomic-chart-month:before {
+	content: '';
+	padding-top: 54%;
+	display: block;
+}
+
+.tokenomic-chart-month > div {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+}
+
+@include media-breakpoint-down(lg) {
+	.section-tokenomic-distribution {
+		padding: 120px 0 0;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.section-tokenomic-distribution {
+		padding: 80px 0 0;
+	}
+}

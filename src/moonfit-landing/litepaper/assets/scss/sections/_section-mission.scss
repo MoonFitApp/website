@@ -1,0 +1,63 @@
+.section-mission {
+	padding: 165px 0 317px;
+
+	.section-header {
+		margin: 0;
+	}
+
+	.section-shape-meteor {
+		bottom: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.section-shape-satellite {
+		bottom: 15%;
+		left: 5%;
+
+		img {
+			max-width: 10vw;
+		}
+	}
+
+	.section-shape-big-satellite {
+		top: 0;
+		right: 0;
+		transform: translate(60%, -15%);
+
+		img {
+			max-width: 48vw;
+		}
+	}
+
+	.section-shape-radial-circle {
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.section-mission {
+		padding: 120px 0 220px;
+
+		.section-shape-satellite {
+			left: 0;
+			transform: translate(-20%, 0);
+		}
+
+		.section-shape-meteor {
+			bottom: 50px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.section-mission {
+		padding: 100px 0 180px;
+
+		.section-shape-big-satellite {
+			transform: translate(55%, -25%);
+		}
+	}
+}
