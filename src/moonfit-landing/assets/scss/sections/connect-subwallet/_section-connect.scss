@@ -31,9 +31,10 @@
   .section-description {
     text-transform: none;
     color: #fff;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.25;
-    max-width: 870px;
+    width: 870px;
+    max-width: 90%;
     margin: 0 auto;
   }
 
@@ -225,7 +226,7 @@
     }
 
     .section-description {
-      font-size: 28px;
+      font-size: 22px;
     }
   }
 }
@@ -245,7 +246,7 @@
     }
 
     .section-description {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     .section-call-out-action {
@@ -261,7 +262,7 @@
     }
 
     .section-description {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
