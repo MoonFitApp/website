@@ -20,7 +20,7 @@
         })
 
         const renderWalletArea = () => {
-            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.subWalletEthereum)
+            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.SubWallet)
             const isConnected = checkConnectedWallet()
             const walletInfoArea = $('#wallet-info-area')
 
@@ -42,7 +42,7 @@
         }
 
         const renderGleam = () => {
-            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.subWalletEthereum)
+            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.SubWallet)
             const isConnected = checkConnectedWallet()
             const embedPosition = document.querySelector('#gleam-competition')
 
@@ -65,7 +65,7 @@
 
         const onConnect = async () => {
             try {
-                const provider = window.subWalletEthereum
+                const provider = window.SubWallet
                 if (!provider) {
                     console.log('SubWallet is not installed')
                 }
