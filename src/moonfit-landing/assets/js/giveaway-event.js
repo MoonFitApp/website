@@ -20,7 +20,7 @@
         })
 
         const renderWalletArea = () => {
-            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.subWalletEthereum)
+            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.SubWallet)
             const isConnected = checkConnectedWallet()
             const walletInfoArea = $('#wallet-info-area')
 
@@ -42,7 +42,7 @@
         }
 
         const renderGleam = () => {
-            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.subWalletEthereum)
+            const isSubWalletInstalled = Boolean(window.injectedWeb3 && window.SubWallet)
             const isConnected = checkConnectedWallet()
             const embedPosition = document.querySelector('#gleam-competition')
 
@@ -65,28 +65,29 @@
 
         const onConnect = async () => {
             try {
-                const provider = window.subWalletEthereum
+                const provider = window.SubWallet
                 if (!provider) {
                     console.log('SubWallet is not installed')
                 }
+                const web3 = new Web3(window.SubWallet)
 
                 await provider.request({method: 'eth_requestAccounts'})
-                const web3 = new Web3(provider)
                 const userAccount = await web3.eth.getAccounts()
-                const chainId = await web3.eth.getChainId()
+                // const chainId = await web3.eth.getChainId()
+                // const chainId = await provider.request({method: 'eth_chainId'})
                 const account = userAccount[0]
                 // let ethBalance = await web3.eth.getBalance(account) // Get wallet balance
                 // ethBalance = web3.utils.fromWei(ethBalance, 'ether')
 
                 const userInfo = {
-                    chainId,
+                    // chainId,
                     account,
                 }
                 saveUserInfo(userInfo)
                 onSuccessfullyConnect()
                 renderGleam(userInfo)
             } catch (err) {
-                console.log(err.message)
+                console.log(err)
             }
         }
 
@@ -131,7 +132,9 @@
             // console.log('Logout')
             window.localStorage.removeItem(USER_LS_KEY)
             renderWalletArea()
-            renderGleam()
+            // renderGleam()
+            const gleamWidget = document.querySelector('.e-widget-wrapper')
+            gleamWidget && gleamWidget.remove()
         }
 
     }(jQuery)
