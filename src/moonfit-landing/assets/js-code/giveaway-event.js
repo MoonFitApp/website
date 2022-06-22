@@ -42,13 +42,13 @@
                 Helpers.copyToClipboard(wallet.account)
 
                 // Show toast
-                var $toast = $('<div class="moonfit-toast show">Copied</div>')
+                const $toast = $('<div class="moonfit-toast show">Copied</div>')
                 $('body').append($toast)
                 setTimeout(function () {
                     $toast.remove()
                 }, 2000)
 
-                var $gleamCompetition = $('#gleam-competition')
+                const $gleamCompetition = $('#gleam-competition')
                 if ($gleamCompetition.length > 0) {
                     const offsetTop = $gleamCompetition.offset().top
 
@@ -130,7 +130,7 @@
                 // ethBalance = web3.utils.fromWei(ethBalance, 'ether')
 
                 const userInfo = {
-                    // chainId,
+                    chainId,
                     account,
                 }
                 saveUserInfo(userInfo)
