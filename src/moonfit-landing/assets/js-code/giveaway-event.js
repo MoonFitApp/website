@@ -1,10 +1,34 @@
 (
     function ($) {
         'use strict'
-        const Helpers = window.moonfit.Helpers;
+        const Helpers = window.moonfit.Helpers
         const USER_LS_KEY = "userAccount"
         const GLEAM_EMBED_CODE = '<a class="e-widget no-button" href="https://gleam.io/Nfums/moonfit-official-whitelist" rel="nofollow">MoonFit Official Whitelist</a>\n' +
             '<script type="text/javascript" src="https://widget.gleamjs.io/e.js" async="true"></script>'
+        const MOONBEAM_CHAIN_ID = 504;
+        const MOONBEAM_CHAIN_ID_HEX = "0x504";
+        const WEB3_METHODS = {
+            addMoonbeamNetwork: {
+                method: 'wallet_addEthereumChain',
+                params: [
+                    {
+                        chainId: `${MOONBEAM_CHAIN_ID_HEX}`,
+                        rpcUrls: ['https://rpc.api.moonbeam.network'],
+                        chainName: 'Moonbeam',
+                        nativeCurrency: {name: 'GLMR', decimals: 18, symbol: 'GLMR'},
+                        blockExplorerUrls: ['https://moonbeam.moonscan.io/']
+                    }
+                ]
+            },
+            switchToMoonbeamNetwork: {
+                method: 'wallet_switchEthereumChain',
+                params: [
+                    {
+                        chainId: `${MOONBEAM_CHAIN_ID_HEX}`
+                    }
+                ]
+            },
+        }
 
         $(document).ready(function () {
             renderWalletArea()
@@ -15,24 +39,24 @@
             $(document).on("click", "#logout-btn", onLogout)
             $(document).on("click", "#address-copy-btn", async () => {
                 const wallet = JSON.parse(localStorage.getItem(USER_LS_KEY))
-                Helpers.copyToClipboard(wallet.account);
+                Helpers.copyToClipboard(wallet.account)
 
                 // Show toast
-	            var $toast = $('<div class="moonfit-toast show">Copied</div>');
-	            $('body').append($toast);
-	            setTimeout(function(){
-		            $toast.remove();
-	            }, 2000);
+                var $toast = $('<div class="moonfit-toast show">Copied</div>')
+                $('body').append($toast)
+                setTimeout(function () {
+                    $toast.remove()
+                }, 2000)
 
-                var $gleamCompetition = $('#gleam-competition');
-                if( $gleamCompetition.length > 0 ) {
-	                const offsetTop = $gleamCompetition.offset().top;
+                var $gleamCompetition = $('#gleam-competition')
+                if ($gleamCompetition.length > 0) {
+                    const offsetTop = $gleamCompetition.offset().top
 
-	                window.scroll( {
-		                top: offsetTop - 30,
-		                left: 0,
-		                behavior: 'smooth'
-	                } );
+                    window.scroll({
+                        top: offsetTop - 30,
+                        left: 0,
+                        behavior: 'smooth'
+                    })
                 }
             })
             renderGleam()
@@ -88,12 +112,19 @@
                 if (!provider) {
                     console.log('SubWallet is not installed')
                 }
-                const web3 = new Web3(window.SubWallet)
+                const chainId = await provider.request({method: 'eth_chainId'})
+                // console.log(chainId, chainId.toString(), MOONBEAM_CHAIN_ID.toString())
+                if (!chainId || chainId.toString() !== MOONBEAM_CHAIN_ID.toString()) {
+                    try {
+                        await provider.request(WEB3_METHODS.switchToMoonbeamNetwork)
+                    } catch (e) {
+                        await provider.request(WEB3_METHODS.addMoonbeamNetwork)
+                    }
+                }
 
+                const web3 = new Web3(provider)
                 await provider.request({method: 'eth_requestAccounts'})
                 const userAccount = await web3.eth.getAccounts()
-                // const chainId = await web3.eth.getChainId()
-                // const chainId = await provider.request({method: 'eth_chainId'})
                 const account = userAccount[0]
                 // let ethBalance = await web3.eth.getBalance(account) // Get wallet balance
                 // ethBalance = web3.utils.fromWei(ethBalance, 'ether')
