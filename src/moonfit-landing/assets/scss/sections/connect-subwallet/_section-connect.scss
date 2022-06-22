@@ -234,7 +234,6 @@
 
 		.e-widget-wrapper {
 			iframe {
-				width: 540px;
 				border-radius: 8px;
 			}
 		}
@@ -250,6 +249,18 @@
 	.section-connect-subwallet {
 		.section-title {
 			font-size: 58px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.section-connect-subwallet {
+		#gleam-competition {
+			.e-widget-wrapper {
+				iframe {
+					width: 540px;
+				}
+			}
 		}
 	}
 }
