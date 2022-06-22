@@ -1,6 +1,7 @@
 (
     function ($) {
         'use strict'
+        const Helpers = window.moonfit.Helpers;
         const USER_LS_KEY = "userAccount"
         const GLEAM_EMBED_CODE = '<a class="e-widget no-button" href="https://gleam.io/Nfums/moonfit-official-whitelist" rel="nofollow">MoonFit Official Whitelist</a>\n' +
             '<script type="text/javascript" src="https://widget.gleamjs.io/e.js" async="true"></script>'
@@ -14,7 +15,14 @@
             $(document).on("click", "#logout-btn", onLogout)
             $(document).on("click", "#address-copy-btn", async () => {
                 const wallet = JSON.parse(localStorage.getItem(USER_LS_KEY))
-                await navigator.clipboard.writeText(wallet.account)
+                Helpers.copyToClipboard(wallet.account);
+
+                // Show toast
+	            var $toast = $('<div class="moonfit-toast show">Copied</div>');
+	            $('body').append($toast);
+	            setTimeout(function(){
+		            $toast.remove();
+	            }, 2000);
 
                 var $gleamCompetition = $('#gleam-competition');
                 if( $gleamCompetition.length > 0 ) {
