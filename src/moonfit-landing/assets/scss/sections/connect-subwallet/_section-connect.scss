@@ -1,268 +1,311 @@
 .page-connect-subwallet {
-  .main-content {
-    padding: 0;
-  }
+	.main-content {
+		padding: 0;
+	}
 }
 
 .section-connect-subwallet {
-  padding: 120px 0 60px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	padding: 120px 0 60px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-  .section-title {
-    font-size: 64px;
-    line-height: 1.125;
-  }
+	.section-title {
+		font-size: 64px;
+		line-height: 1.125;
+	}
 
-  .connect-image {
-    margin: 0 0 67px;
+	.connect-image {
+		margin: 0 0 67px;
 
-    img {
-      max-width: 40vw;
-    }
-  }
+		img {
+			max-width: 40vw;
+		}
+	}
 
-  .section-description-wrap {
-    margin: 0;
-  }
+	.section-description-wrap {
+		margin: 0;
+	}
 
-  .section-description {
-    text-transform: none;
-    color: #fff;
-    font-size: 26px;
-    line-height: 1.25;
-    width: 870px;
-    max-width: 90%;
-    margin: 0 auto;
-  }
+	.section-description {
+		text-transform: none;
+		color: #fff;
+		font-size: 26px;
+		line-height: 1.25;
+		width: 870px;
+		max-width: 90%;
+		margin: 0 auto;
+	}
 
-  .section-content {
-    position: relative;
-    z-index: 11;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: center;
-    text-align: center;
-  }
+	.section-content {
+		position: relative;
+		z-index: 11;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-grow: 1;
+		justify-content: center;
+		text-align: center;
+	}
 
-  .section-call-out-action {
-    margin-top: 54px;
-  }
+	.section-call-out-action {
+		margin-top: 54px;
+	}
 
-  .button {
-    min-width: 300px;
-  }
+	.button {
+		min-width: 300px;
+	}
 
-  .footer-menu {
-    margin: 47px 0 0;
-  }
+	.footer-menu {
+		margin: 47px 0 0;
+	}
 
-  .section-shape-promoting-bg {
-    bottom: 10%;
-  }
+	.section-shape-promoting-bg {
+		bottom: 10%;
+	}
 
-  .section-shape-satellite-1 {
-    bottom: 5%;
-    left: 0;
-    transform: translate(-50%, 0);
+	.section-shape-satellite-1 {
+		bottom: 5%;
+		left: 0;
+		transform: translate(-50%, 0);
 
-    img {
-      max-width: 12vw;
-    }
-  }
+		img {
+			max-width: 12vw;
+		}
+	}
 
-  .section-shape-satellite-2 {
-    top: 10%;
-    right: 0;
-    transform: translate(50%, 0);
+	.section-shape-satellite-2 {
+		top: 10%;
+		right: 0;
+		transform: translate(50%, 0);
 
-    img {
-      max-width: 22vw;
-    }
-  }
+		img {
+			max-width: 22vw;
+		}
+	}
 
-  .section-shape-kusama {
-    bottom: 40%;
-    left: 3.5%;
+	.section-shape-kusama {
+		bottom: 40%;
+		left: 3.5%;
 
-    img {
-      max-width: 13vw;
-    }
-  }
+		img {
+			max-width: 13vw;
+		}
+	}
 
-  .section-shape-polkadot {
-    bottom: 12%;
-    right: 4%;
+	.section-shape-polkadot {
+		bottom: 12%;
+		right: 4%;
 
-    img {
-      max-width: 12vw;
-    }
-  }
+		img {
+			max-width: 12vw;
+		}
+	}
 
-  .shape-token-mfr-1 {
-    left: 20%;
-    bottom: 15%;
-  }
+	.shape-token-mfr-1 {
+		left: 20%;
+		bottom: 15%;
+	}
 
-  .shape-token-mfr-2 {
-    right: 5%;
-    bottom: 35%;
-    transform: rotate3d(0, 1, 1, 44deg);
-    filter: blur(3px);
-  }
+	.shape-token-mfr-2 {
+		right: 5%;
+		bottom: 35%;
+		transform: rotate3d(0, 1, 1, 44deg);
+		filter: blur(3px);
+	}
 
-  .shape-token-mfg-1 {
-    right: 20%;
-    top: 15%;
-  }
+	.shape-token-mfg-1 {
+		right: 20%;
+		top: 15%;
+	}
 
-  .shape-token-mfg-2 {
-    left: 15%;
-    top: 15%;
-    transform: rotate3d(0, 1, 1, 48deg) skew(15deg);
-    filter: blur(1px);
-  }
+	.shape-token-mfg-2 {
+		left: 15%;
+		top: 15%;
+		transform: rotate3d(0, 1, 1, 48deg) skew(15deg);
+		filter: blur(1px);
+	}
 
-  .section-call-out-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	.section-call-out-action {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-    .connected-wallet-info-card {
-      background-color: #020722;
-      width: 970px;
-      padding: 31px 50px 50px 50px;
+		.connected-wallet-info-card {
+			background-color: #020722;
+			width: 970px;
+			max-width: 100%;
+			padding: 31px 50px 61px 50px;
 
-      $border: 3px;
-      color: #FFF;
-      position: relative;
-      background-clip: padding-box;
-      border: solid $border transparent;
-      border-radius: 1em;
+			$border: 3px;
+			color: #fff;
+			position: relative;
+			background-clip: padding-box;
+			border: solid $border transparent;
+			border-radius: 10px;
 
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin: -$border;
-        border-radius: inherit;
-        background: linear-gradient(to right, #4CCBC9, #E4007B);
-      }
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				margin: -$border;
+				border-radius: inherit;
+				background: linear-gradient(to right, #4ccbc9, #e4007b);
+			}
 
-      .card-title {
-        font-family: 'Race Sport', serif;
-        color: #4CCBC9;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 21px;
-        margin-bottom: 25px;
-      }
+			.go-to-gleam-competition {
+				display: block;
+				width: 80px;
+				height: 80px;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%, 50%);
+				background: url(../images/icons/arrow-down.png) no-repeat center;
+				background-size: 80px;
+			}
 
-      .card-body {
-        .wallet-address {
-          margin-bottom: 42px;
+			.card-title {
+				font-family: 'Race Sport', serif;
+				color: #4ccbc9;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 21px;
+				margin-bottom: 25px;
+			}
 
-          #wallet-account-address {
-            padding: 17px 20px 23px;
-            margin-left: 5px;
-            background-color: #21063C;
-            color: #FFF;
-          }
+			.card-body {
+				padding: 0 1rem;
 
-          #logout-btn {
-            min-width: unset;
-            margin-left: 15px;
-          }
-        }
-      }
-    }
-  }
+				.wallet-address {
+					display: flex;
+					align-items: center;
+					background: #21063c;
+					color: $body-color;
+					border-radius: 5px;
+					padding: 0 22px;
+					min-height: 64px;
+					width: 770px;
+					max-width: 100%;
+					margin: 0 auto 23px;
+				}
 
-  #gleam-competition {
-    margin-top: 50px;
+				.logout-connect-subwallet {
+					@extend %LinkTransition02;
+					color: $primary-color;
+					cursor: pointer;
+					padding: 0 0 5px;
+					--gutter-y: 2px;
+				}
 
-    .e-widget-wrapper {
-      iframe {
-        width: 540px;
-        border-radius: 8px;
-      }
-    }
+				.wallet-address-heading {
+					margin: 0 11px 0 0;
+					font-size: 16px;
+					line-height: 24px;
+				}
 
-    .e-widget-preloader {
-      background: transparent;
-    }
-  }
+				#wallet-account-address {
+					color: #fff;
+				}
+
+				#address-copy-btn {
+					.button-icon {
+						font-size: 16px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: rgba(33, 6, 60, .3);
+						width: 2em;
+						height: 2em;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	#gleam-competition {
+		margin-top: 68px;
+
+		.e-widget-wrapper {
+			iframe {
+				width: 540px;
+				border-radius: 8px;
+			}
+		}
+
+		.e-widget-preloader {
+			background: transparent;
+		}
+	}
 
 }
 
 @media screen and (max-width: 1400px) {
-  .section-connect-subwallet {
-    .section-title {
-      font-size: 58px;
-    }
-  }
+	.section-connect-subwallet {
+		.section-title {
+			font-size: 58px;
+		}
+	}
 }
 
 @include media-breakpoint-down(lg) {
-  .section-connect-subwallet {
-    .section-title {
-      font-size: 50px;
-    }
-  }
+	.section-connect-subwallet {
+		.section-title {
+			font-size: 50px;
+		}
+	}
 }
 
 @include media-breakpoint-down(md) {
-  .section-connect-subwallet {
-    .section-title {
-      font-size: 44px;
-    }
+	.section-connect-subwallet {
+		.section-title {
+			font-size: 44px;
+		}
 
-    .section-description {
-      font-size: 22px;
-    }
-  }
+		.section-description {
+			font-size: 22px;
+		}
+	}
 }
 
 @include media-breakpoint-down(sm) {
-  .section-connect-subwallet {
-    .section-title {
-      font-size: 38px;
-    }
+	.section-connect-subwallet {
+		.section-title {
+			font-size: 38px;
+		}
 
-    .connect-image {
-      margin: 0 0 30px;
+		.connect-image {
+			margin: 0 0 30px;
 
-      img {
-        max-width: 56vw;
-      }
-    }
+			img {
+				max-width: 56vw;
+			}
+		}
 
-    .section-description {
-      font-size: 20px;
-    }
+		.section-description {
+			font-size: 20px;
+		}
 
-    .section-call-out-action {
-      margin-top: 35px;
-    }
-  }
+		.section-call-out-action {
+			margin-top: 35px;
+		}
+	}
 }
 
 @include media-breakpoint-down(xs) {
-  .section-connect-subwallet {
-    .section-title {
-      font-size: 32px;
-    }
+	.section-connect-subwallet {
+		.section-title {
+			font-size: 32px;
+		}
 
-    .section-description {
-      font-size: 18px;
-    }
-  }
+		.section-description {
+			font-size: 18px;
+		}
+	}
 }

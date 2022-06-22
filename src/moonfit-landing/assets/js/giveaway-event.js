@@ -15,6 +15,17 @@
             $(document).on("click", "#address-copy-btn", async () => {
                 const wallet = JSON.parse(localStorage.getItem(USER_LS_KEY))
                 await navigator.clipboard.writeText(wallet.account)
+
+                var $gleamCompetition = $('#gleam-competition');
+                if( $gleamCompetition.length > 0 ) {
+	                const offsetTop = $gleamCompetition.offset().top;
+
+	                window.scroll( {
+		                top: offsetTop - 30,
+		                left: 0,
+		                behavior: 'smooth'
+	                } );
+                }
             })
             renderGleam()
         })
@@ -100,19 +111,25 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="wallet-address">
-                                            Your Wallet: <span id="wallet-account-address">${walletInfo.account}</span>
-                                            <span class="button button-primary" id="logout-btn">
-                                                <i class="fad fa-sign-out-alt"></i>
-                                            </span>
+                                            <div class="wallet-address-heading">
+                                                <div>Your Wallet: </div>
+                                                <span class="logout-connect-subwallet" id="logout-btn">
+                                                    Logout
+                                                </span>
+                                            </div>
+                                            <span id="wallet-account-address">${walletInfo.account}</span>
                                         </div>
-                                        <div class="button button-secondary"
+                                        <div class="button button-secondary icon-right"
                                              id="address-copy-btn">
                                             <span class="button-text">
                                                 Copy Address for WhiteList Form Submission below
-                                                <i class="fad fa-arrow-circle-down icon-right"></i>
+                                            </span>
+                                            <span class="button-icon">
+                                                <i class="far fa-arrow-down"></i>
                                             </span>
                                         </div>
                                     </div>
+                                    <a href="#gleam-competition" class="scroll-to go-to-gleam-competition"></a>
                                 </div>`
             walletInfoArea.empty()
             walletInfoArea.html(html)
