@@ -12,7 +12,7 @@
                 method: 'wallet_addEthereumChain',
                 params: [
                     {
-                        chainId: `${MOONBEAM_CHAIN_ID_HEX}`,
+                        chainId: MOONBEAM_CHAIN_ID_HEX,
                         rpcUrls: ['https://rpc.api.moonbeam.network'],
                         chainName: 'Moonbeam',
                         nativeCurrency: {name: 'GLMR', decimals: 18, symbol: 'GLMR'},
@@ -24,7 +24,7 @@
                 method: 'wallet_switchEthereumChain',
                 params: [
                     {
-                        chainId: `${MOONBEAM_CHAIN_ID_HEX}`
+                        chainId: MOONBEAM_CHAIN_ID_HEX
                     }
                 ]
             },
@@ -124,15 +124,19 @@
                 if (!provider) {
                     console.log('SubWallet is not installed')
                 }
+                // console.log('1111', provider)
                 const chainId = await provider.request({method: 'eth_chainId'})
                 // console.log(chainId, chainId.toString(), MOONBEAM_CHAIN_ID.toString())
-                if (!chainId || chainId.toString() !== MOONBEAM_CHAIN_ID.toString()) {
-                    try {
-                        await provider.request(WEB3_METHODS.switchToMoonbeamNetwork)
-                    } catch (e) {
-                        await provider.request(WEB3_METHODS.addMoonbeamNetwork)
-                    }
-                }
+                // if (!chainId || chainId.toString() !== MOONBEAM_CHAIN_ID.toString()) {
+                //     try {
+                //         console.log("Not Moonbeam Network")
+                //         // await provider.request(WEB3_METHODS.switchToMoonbeamNetwork)
+                //         provider.request(WEB3_METHODS.switchToMoonbeamNetwork).then( e => console.log ("Then: ", e)).catch(e => console.log("Catch", e))
+                //     } catch (e) {
+                //         console.log(e)
+                //         await provider.request(WEB3_METHODS.addMoonbeamNetwork)
+                //     }
+                // }
 
                 const web3 = new Web3(provider)
                 await provider.request({method: 'eth_requestAccounts'})
