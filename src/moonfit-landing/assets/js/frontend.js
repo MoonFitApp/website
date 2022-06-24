@@ -275,6 +275,7 @@
 			scrollTo();
 			//initVideoPopups();
 			initSliders();
+			handleNftStageDate();
 		} );
 
 		$( window ).on( 'load', function() {
@@ -354,6 +355,29 @@
 				};
 
 				$.firefly( settings );
+			} );
+		}
+
+		function handleNftStageDate() {
+			var DAY_IN_SECONDS = 1000 * 60 * 60 * 24;
+
+			$( '.block-nft-stage' ).each( function() {
+				var date = $( this ).data( 'time' );
+				if ( typeof  date !== 'undefined' ) {
+					var openDate = new Date( date );
+					var today = new Date();
+
+					var daysLeft = Math.ceil( (
+						                          openDate.getTime() - today.getTime()
+					                          ) / DAY_IN_SECONDS );
+
+					daysLeft = daysLeft > 0 ? daysLeft : 0;
+					var output = '<span class="day-left">' + daysLeft + '</span>';
+					output += daysLeft === 1 ? ' day left' : ' days left';
+
+					$( this ).find( '.badge-inner' ).html( output );
+					$( this ).find( '.badge-day-left' ).addClass( 'rendered' );
+				}
 			} );
 		}
 	}( jQuery )
