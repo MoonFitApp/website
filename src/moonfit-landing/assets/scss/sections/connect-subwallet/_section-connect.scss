@@ -51,10 +51,10 @@
 
 	.section-call-out-action {
 		margin-top: 54px;
-	}
 
-	.button {
-		min-width: 300px;
+		> .button {
+			min-width: 300px;
+		}
 	}
 
 	.footer-menu {
@@ -136,7 +136,7 @@
 			background-color: #020722;
 			width: 970px;
 			max-width: 100%;
-			padding: 31px 50px 61px 50px;
+			padding: 31px 20px 66px;
 
 			$border: 3px;
 			color: #fff;
@@ -163,7 +163,7 @@
 				width: 80px;
 				height: 80px;
 				position: absolute;
-				bottom: 0;
+				bottom: -3px;
 				left: 50%;
 				transform: translate(-50%, 50%);
 				background: url(../images/icons/arrow-down.png) no-repeat center;
@@ -180,40 +180,59 @@
 			}
 
 			.card-body {
-				padding: 0 1rem;
-
-				.wallet-address {
-					display: flex;
-					align-items: center;
-					background: #21063c;
-					color: $body-color;
-					border-radius: 5px;
-					padding: 0 22px;
-					min-height: 64px;
-					width: 770px;
-					max-width: 100%;
-					margin: 0 auto 23px;
-				}
-
-				.logout-connect-subwallet {
-					@extend %LinkTransition02;
-					color: $primary-color;
-					cursor: pointer;
-					padding: 0 0 5px;
-					--gutter-y: 2px;
-				}
+				padding: 0;
+				width: 610px;
+				max-width: 100%;
+				margin: 0 auto;
+				text-align: left;
 
 				.wallet-address-heading {
-					margin: 0 11px 0 0;
+					margin: 0 0 9px;
 					font-size: 16px;
 					line-height: 24px;
 				}
 
+				.wallet-address {
+					display: flex;
+					align-items: center;
+					margin: 0 auto 19px;
+				}
+
+				.wallet-icon {
+					flex-shrink: 0;
+					margin: 0 8px 0 0;
+					width: 24px;
+					height: 24px;
+					background: url(../images/wallet-icon.png) no-repeat center;
+					background-size: cover;
+				}
+
+				.logout-connect-subwallet {
+					--button-hoz-padding: 16px;
+					flex-shrink: 0;
+					--mg-button-text: #fff;
+					--mg-button-background: transparent;
+					--mg-button-border: rgba(255, 255, 255, .2);
+					font-size: 14px;
+					font-weight: 600;
+					min-height: 28px;
+					line-height: 18px;
+					padding: 0 var(--button-hoz-padding) 2px;
+					margin: 0 0 0 5px;
+				}
+
 				#wallet-account-address {
 					color: #fff;
+					flex-grow: 1;
+					font-size: 20px;
+					line-height: 1;
+					word-break: break-all;
 				}
 
 				#address-copy-btn {
+					--button-hoz-padding: 16px;
+					width: 100%;
+
 					.button-icon {
 						font-size: 16px;
 						display: flex;
@@ -223,6 +242,8 @@
 						width: 2em;
 						height: 2em;
 						border-radius: 50%;
+						top: 2px;
+						position: relative;
 					}
 				}
 			}

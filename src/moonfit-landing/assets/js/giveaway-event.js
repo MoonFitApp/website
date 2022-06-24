@@ -167,14 +167,15 @@
                                         Connect successfully with subwallet
                                     </div>
                                     <div class="card-body">
+                                        <div class="wallet-address-heading">
+                                            <div>Your address: </div>
+                                        </div>
                                         <div class="wallet-address">
-                                            <div class="wallet-address-heading">
-                                                <div>Your Wallet: </div>
-                                                <span class="logout-connect-subwallet" id="logout-btn">
-                                                    Logout
-                                                </span>
-                                            </div>
-                                            <span id="wallet-account-address">${walletInfo.account}</span>
+                                            <div class="wallet-icon"></div>
+                                            <div id="wallet-account-address"><span>${walletInfo.account}</span></div>
+                                            <span class="logout-connect-subwallet button" id="logout-btn">
+                                                Log out
+                                            </span>
                                         </div>
                                         <div class="button button-secondary icon-right"
                                              id="address-copy-btn">
