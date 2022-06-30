@@ -120,6 +120,7 @@
 		line-height: 1;
 		color: $secondary-color;
 		margin: 0 0 31px;
+		min-height: 88px;
 
 		.day {
 			font-size: 68px;
@@ -138,6 +139,12 @@
 			position: relative;
 			top: -4px;
 		}
+
+		&.not-available {
+			.day {
+				font-size: 48px;
+			}
+		}
 	}
 
 	.stage-title {
@@ -154,7 +161,7 @@
 		font-size: 20px;
 		line-height: 28px;
 
-		li {
+		> li {
 			position: relative;
 			padding: 0 0 0 23px;
 
@@ -182,22 +189,56 @@
 			color: #fff;
 		}
 
-		.price {
-			position: relative;
-			color: $primary-color;
-			padding: 0 0 0 30px;
-			min-height: 24px;
+		.prices {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+			padding: 0;
 
-			&:before {
-				content: '';
-				position: absolute;
-				top: 3px;
-				left: 0;
-				width: 24px;
-				height: 24px;
-				background: url(../images/wallet-icon.png) no-repeat center;
-				background-size: cover;
+			> li {
+				list-style-type: none;
+				display: inline-block;
+
+				+ li {
+					position: relative;
+					padding: 0 0 0 16px;
+					margin: 0 !important;
+
+					&:before {
+						display: block;
+						content: '+';
+						position: absolute;
+						top: 0;
+						left: 2px;
+						font-size: 20px;
+					}
+				}
 			}
+		}
+
+		.price {
+			color: $primary-color;
+			display: inline-flex;
+			align-items: center;
+		}
+
+		.price-icon {
+			display: inline-block;
+			position: relative;
+			top: 2px;
+			margin: 0 6px 0 0;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			background-size: cover !important;
+		}
+
+		.price-glmr {
+			background: url(../images/wallet-icon.png) no-repeat center;
+		}
+
+		.price-mint-pass {
+			background: url(../images/mint-pass.png) no-repeat center;
 		}
 	}
 
@@ -219,6 +260,7 @@
 
 		.block-content {
 			opacity: .5;
+			pointer-events: none;
 		}
 
 		.stage-connect {
