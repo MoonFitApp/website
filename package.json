@@ -42,9 +42,7 @@
 		"stylelint": "latest"
 	},
 	"scripts": {
-		"build": "gulp javascript && gulp sass:full && gulp sass:full:litepaper",
-		"package": "find . -name '.DS_Store' -type f -delete && gulp javascript && gulp sass:full && gulp sass:full:litepaper && gulp zip",
-		"package:linux": "gulp javascript && gulp sass:full && gulp sass:full:litepaper && gulp zip"
+		"build": "gulp javascript && gulp sass:full && gulp sass:full:litepaper"
 	},
 	"dependencies": {
 		"css-size": "^4.0.1",
