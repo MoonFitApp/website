@@ -74,6 +74,7 @@
 		left: -8px;
 		display: inline-block;
 		font-size: 16px;
+		text-transform: uppercase;
 		font-weight: 800;
 		user-select: none;
 		opacity: 0;
@@ -159,6 +160,8 @@
 		margin: 0;
 		padding: 0;
 		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
 		line-height: 28px;
 
 		> li {
@@ -187,6 +190,7 @@
 
 		.quantity {
 			color: #fff;
+			font-weight: 800;
 		}
 
 		.prices {
@@ -220,6 +224,7 @@
 			color: $primary-color;
 			display: inline-flex;
 			align-items: center;
+			font-weight: 800;
 		}
 
 		.price-icon {

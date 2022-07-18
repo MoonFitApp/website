@@ -21,9 +21,9 @@
       "bothVersion": true
     },
     {
-      "name": "home-chart",
+      "name": "litepaper",
       "files": [
-        "src/moonfit-landing/assets/js-code/home-chart.js"
+        "src/moonfit-landing/assets/js-code/litepaper.js"
       ],
       "bothVersion": true
     },

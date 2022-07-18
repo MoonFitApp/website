@@ -61,8 +61,8 @@
 }
 
 .block-game-feature-description {
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 20px;
+	line-height: 28px;
 	margin: 5px 0 0;
 }
 
@@ -117,13 +117,20 @@
 	}
 
 	.block-game-feature-description {
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 18px;
+		line-height: 26px;
 	}
 
 	.slider-game-features > .swiper-inner > .swiper-container.swiper-container-horizontal > .swiper-wrapper[data-active-items='auto'] {
 		> .swiper-slide {
 			width: 290px !important;
 		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.block-game-feature-description {
+		font-size: 16px;
+		line-height: 26px;
 	}
 }

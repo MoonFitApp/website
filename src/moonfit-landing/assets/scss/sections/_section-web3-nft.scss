@@ -5,7 +5,7 @@
 	background: linear-gradient(45deg, $primary-color 0%, rgba(43, 54, 28, 0) 70%, rgba(43, 54, 28, 0) 82%, $primary-color 100%);
 	box-shadow: 0 4px 10px rgba(37, 240, 235, .4);
 	width: 272px;
-	padding: 28px 22px 20px;
+	padding: 27px 22px 20px;
 	text-align: left;
 
 	&:before {
@@ -32,8 +32,8 @@
 	}
 
 	.description {
-		font-size: 16px;
-		line-height: 26px;
+		font-size: 20px;
+		line-height: 28px;
 		margin: 0;
 	}
 }
@@ -46,7 +46,7 @@
 	}
 
 	.section-description {
-		max-width: 580px;
+		max-width: 660px;
 		margin: 0 auto;
 	}
 
