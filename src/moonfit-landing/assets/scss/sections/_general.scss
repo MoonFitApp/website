@@ -93,8 +93,8 @@
 }
 
 .section-description {
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 22px;
+	line-height: 30px;
 
 	p {
 		margin-bottom: 21px;
@@ -146,8 +146,8 @@
 	}
 
 	.section-description {
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 22px;
+		line-height: 30px;
 	}
 
 	.section-title-steps {
@@ -196,7 +196,7 @@
 }
 
 .section-call-out-action {
-	margin-top: 39px;
+	margin-top: 29px;
 }
 
 .section-shapes {
@@ -527,13 +527,13 @@
 
 	.section-description {
 		font-size: 16px;
-		line-height: 26px;
+		line-height: 24px;
 	}
 
 	.section-header-beside {
 		.section-description {
 			font-size: 16px;
-			line-height: 26px;
+			line-height: 24px;
 		}
 	}
 
@@ -550,7 +550,16 @@
 
 		.section-description {
 			font-size: 16px;
-			line-height: 26px;
+			line-height: 24px;
+		}
+	}
+
+	.section-title-steps {
+		text-align: center !important;
+		justify-content: center !important;
+
+		.section-title-step {
+			display: none !important;
 		}
 	}
 }

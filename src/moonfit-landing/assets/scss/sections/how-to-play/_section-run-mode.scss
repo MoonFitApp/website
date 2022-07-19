@@ -50,6 +50,10 @@
 
 		.section-description {
 			text-align: center;
+
+			p:not(:last-child) {
+				margin: 0 0 12px;
+			}
 		}
 
 		.slider-screenshot {

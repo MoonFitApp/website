@@ -24,12 +24,12 @@
 }
 
 .block-roadmap-wrap {
-	padding: 230px 0 0;
+	padding: 240px 0 0;
 }
 
 .roadmap-background {
 	--heading-size: 24px;
-	--text-size: 18px;
+	--text-size: 20px;
 	position: relative;
 	width: 1920px;
 	left: 50%;
@@ -208,7 +208,7 @@
 		.roadmap-item-box {
 			position: relative;
 			width: 300px;
-			padding: 16px 20px 23px;
+			padding: 26px 20px 23px;
 			background-image: url('../images/roadmap/bg-roadmap-item.jpg');
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -227,7 +227,7 @@
 				z-index: -1;
 				margin: -2px;
 				border-radius: inherit;
-				background: linear-gradient(255.08deg, #4ccbc9 -8.51%, rgba(0, 0, 0, 0.573279) 20.14%, rgba(0, 0, 0, 0) 80.39%, #e4007b 101.4%);
+				background: linear-gradient(255.08deg, #4ccbc9 0%, rgba(0, 0, 0, 0.573279) 20%, rgba(0, 0, 0, 0) 65%, #e4007b 100%);
 				transition: all 0.3s ease 0s;
 			}
 
@@ -305,7 +305,7 @@
 
 		&.item-3 {
 			left: 446px;
-			top: 144px;
+			top: 134px;
 			transition: all 0.5s ease 0.2s;
 		}
 
@@ -335,7 +335,7 @@
 
 		&.item-6 {
 			left: auto;
-			top: -256px;
+			top: -266px;
 			right: 263px;
 			transition: all 0.5s ease 0.6s;
 		}
@@ -349,7 +349,7 @@
 
 	.roadmap-background {
 		--heading-size: 22px;
-		--text-size: 16px;
+		--text-size: 18px;
 		width: 1440px;
 
 		.roadmap-dot-light {
@@ -416,7 +416,7 @@
 
 			&.item-3 {
 				left: 320px;
-				top: 26px;
+				top: 0;
 			}
 
 			&.item-4 {
@@ -491,7 +491,7 @@
 		.roadmap-item {
 			&.item-1 {
 				left: 283px;
-				bottom: 214px;
+				bottom: 220px;
 			}
 
 			&.item-2 {
@@ -501,12 +501,12 @@
 
 			&.item-3 {
 				left: 295px;
-				top: 10px;
+				top: -20px;
 			}
 
 			&.item-4 {
 				left: 567px;
-				top: -100px;
+				top: -105px;
 			}
 
 			&.item-5 {
@@ -515,7 +515,7 @@
 			}
 
 			&.item-6 {
-				top: -290px;
+				top: -300px;
 				right: 168px;
 			}
 		}
@@ -709,7 +709,7 @@
 				margin: 0 0 50px;
 
 				&:before {
-					background: linear-gradient(70deg, #4ccbc9 -8.51%, rgba(0, 0, 0, 0.573279) 20.14%, rgba(0, 0, 0, 0) 80.39%, #e4007b 101.4%);
+					background: linear-gradient(70deg, #4ccbc9 0%, rgba(0, 0, 0, 0.573279) 20%, rgba(0, 0, 0, 0) 65%, #e4007b 100%);
 				}
 
 				.roadmap-light-vertical {
