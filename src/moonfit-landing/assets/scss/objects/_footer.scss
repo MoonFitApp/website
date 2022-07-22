@@ -43,6 +43,8 @@
 	margin: 65px 0 0;
 	padding: 0;
 	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 
 	li {
@@ -170,7 +172,7 @@
 	margin: 28px 0 0;
 	font-size: 16px;
 	font-weight: 600;
-	line-height: 26px;
+	line-height: 24px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -266,9 +268,19 @@
 		font-size: 18px;
 	}
 
-	.footer-menu a {
-		font-size: 16px;
-		padding: 3px 0;
+	.footer-menu {
+		li {
+			padding: 0 10px;
+		}
+
+		a {
+			font-size: 16px;
+			padding: 3px 0;
+
+			svg {
+				margin: 0 8px 0 0;
+			}
+		}
 	}
 
 	.footer-big-heading {
