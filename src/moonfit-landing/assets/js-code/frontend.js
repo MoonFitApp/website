@@ -21,6 +21,22 @@
 			//initVideoPopups();
 			initSliders();
 			handleNftStageDate();
+
+			$( '.block-countdown-timer' ).each( function( evt ) {
+				var $timer    = $( this ),
+				    date      = $timer.data( 'time' ),
+				    startTime = Date.now(),
+				    endTime   = new Date( date ).getTime();
+
+				var options = {
+					startTime: startTime,
+					endTime: endTime,
+					addZeroPrefix: true,
+					loop: false,
+				};
+
+				$timer.CountdownTimer( options );
+			} );
 		} );
 
 		$( window ).on( 'load', function() {
@@ -119,6 +135,21 @@
 						endTime: endTime,
 						addZeroPrefix: true,
 						loop: false,
+						showSeparator: false,
+						formatter: {
+							singular: {
+								day: 'd',
+								hour: 'h',
+								minute: 'm',
+								second: 's'
+							},
+							plural: {
+								day: 'd',
+								hour: 'h',
+								minute: 'm',
+								second: 's'
+							}
+						}
 					};
 
 					$countdown.CountdownTimer( options );

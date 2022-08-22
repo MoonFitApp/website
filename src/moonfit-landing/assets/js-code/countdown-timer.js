@@ -12,11 +12,21 @@
 				this.options = Object.assign( {}, {
 					addZeroPrefix: true,
 					loop: false,
+					showSeparator: true,
+					separator: '<div class="countdown-separator">:</div>',
 					formatter: {
-						day: 'd',
-						hour: 'h',
-						minute: 'm',
-						second: 's',
+						singular: {
+							day: 'day',
+							hour: 'hour',
+							minute: 'minute',
+							second: 'second',
+						},
+						plural: {
+							day: 'days',
+							hour: 'hours',
+							minute: 'minutes',
+							second: 'seconds',
+						}
 					},
 					callback: () => {
 					}
@@ -53,7 +63,7 @@
 				}
 			};
 			update = () => {
-				this.container.text( this.format( this.endTime - this.startTime ) );
+				this.container.html( this.format( this.endTime - this.startTime ) );
 
 				this.startTime += this.intervalTime;
 			};
@@ -87,10 +97,20 @@
 				    minutes = Math.floor( ms / this.MIN_IN_MS ) % 60,
 				    seconds = Math.floor( ms / 1000 ) % 60;
 
-				return this.getFormatText( days, 'day' ) + this.getFormatText( hours, 'hour' ) + this.getFormatText( minutes, 'minute' ) + this.getFormatText( seconds, 'second' );
+				var items = [
+					this.getFormatText( days, 'day' ),
+					this.getFormatText( hours, 'hour' ),
+					this.getFormatText( minutes, 'minute' ),
+					this.getFormatText( seconds, 'second' )
+				];
+
+				var separator = this.options.showSeparator ? this.options.separator : '';
+
+				return '<div class="countdown-wrap">' + items.join( separator ) + '</div>';
 			};
 			getFormatText = ( value, type ) => {
-				return this.addZeroPrefix( value ) + this.options.formatter[ type ] + ' ';
+				var period = value === 1 ? this.options.formatter.singular[ type ] : this.options.formatter.plural[ type ];
+				return '<div class="countdown-item countdown-' + type + '"><div class="countdown-number">' + this.addZeroPrefix( value ) + '</div><div class="countdown-period">' + period + '</div></div>';
 			}
 		}
 

@@ -6,7 +6,6 @@ var gulp        = require( 'gulp' ),
     log         = require( 'fancy-log' ),
     reportError = require( '../report-bug' ),
     list        = config.compileMinifyJS,
-    min         = '.min',
     extension   = '.js';
 
 gulp.task( 'javascript:dev', function() {
