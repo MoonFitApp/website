@@ -35,6 +35,13 @@
       "bothVersion": true
     },
     {
+      "name": "countdown-timer",
+      "files": [
+        "src/moonfit-landing/assets/js-code/countdown-timer.js"
+      ],
+      "bothVersion": true
+    },
+    {
       "name": "grid-layout",
       "files": [
         "src/moonfit-landing/assets/js-code/grid-layout.js"

@@ -364,7 +364,21 @@
 			$( '.block-nft-stage' ).each( function() {
 				var date = $( this ).data( 'time' );
 				if ( typeof  date !== 'undefined' ) {
-					var openDate = new Date( date );
+					var $timer     = $( this ),
+					    $countdown = $timer.find( '.badge-inner' ),
+					    startTime  = Date.now(),
+					    endTime    = new Date( date ).getTime();
+
+					var options = {
+						startTime: startTime,
+						endTime: endTime,
+						addZeroPrefix: true,
+						loop: false,
+					};
+
+					$countdown.CountdownTimer( options );
+
+					/*var openDate = new Date( date );
 					var today = new Date();
 
 					var daysLeft = Math.ceil( (
@@ -376,6 +390,8 @@
 					output += daysLeft === 1 ? ' day left' : ' days left';
 
 					$( this ).find( '.badge-inner' ).html( output );
+					*/
+
 					$( this ).find( '.badge-day-left' ).addClass( 'rendered' );
 				}
 			} );
