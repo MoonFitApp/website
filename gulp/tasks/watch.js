@@ -7,5 +7,5 @@ var gulp   = require( 'gulp' ),
 gulp.task( 'watch:main', function() {
 	gulp.watch( paths.sass.watch, gulp.series( 'sass' ) );
 	gulp.watch( paths.sass.litepaper.watch, gulp.series( 'sass:litepaper' ) );
-	gulp.watch( paths.javascript.src, gulp.series( 'javascript' ) );
+	gulp.watch( paths.javascript.src, gulp.series( 'javascript:dev' ) );
 } );
