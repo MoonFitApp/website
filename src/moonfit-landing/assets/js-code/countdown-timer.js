@@ -28,7 +28,9 @@
 							second: 'seconds',
 						}
 					},
-					callback: () => {
+					onInit: () => {
+					},
+					onFinished: () => {
 					}
 				}, options );
 				this.startTime = this.options.startTime;
@@ -38,6 +40,7 @@
 				this.timer = null;
 				this.starting = false;
 				this.start();
+				this.options.onInit();
 			}
 
 			// jQuery methods.
@@ -75,7 +78,7 @@
 					this.start();
 				} else {
 					this.timer = null;
-					this.options.callback();
+					this.options.onFinished();
 				}
 			};
 			clear = () => {

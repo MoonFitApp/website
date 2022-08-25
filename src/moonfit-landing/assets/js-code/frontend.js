@@ -120,10 +120,10 @@
 		}
 
 		function handleNftStageDate() {
-			var DAY_IN_SECONDS = 1000 * 60 * 60 * 24;
-
 			$( '.block-nft-stage' ).each( function() {
-				var date = $( this ).data( 'time' );
+				var $saleRound = $( this ),
+				    date       = $( this ).data( 'time' );
+
 				if ( typeof  date !== 'undefined' ) {
 					var $timer     = $( this ),
 					    $countdown = $timer.find( '.badge-inner' ),
@@ -149,6 +149,13 @@
 								minute: 'm',
 								second: 's'
 							}
+						},
+						onInit: function() {
+							$saleRound.addClass( 'countdown-initialize' );
+						},
+						onFinished: function() {
+							$saleRound.addClass( 'sold-out' );
+							$saleRound.find( '.badge-inner' ).text( 'Sold out' );
 						}
 					};
 
@@ -168,7 +175,7 @@
 					$( this ).find( '.badge-inner' ).html( output );
 					*/
 
-					$( this ).find( '.badge-day-left' ).addClass( 'rendered' );
+					//$( this ).find( '.badge-day-left' ).addClass( 'rendered' );
 				}
 			} );
 		}
