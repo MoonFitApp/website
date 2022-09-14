@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "src/moonfit-landing",
+    "public": "dist/moonfit-landing",
     "ignore": [
       "firebase.json",
       "**/.*",

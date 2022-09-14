@@ -42,10 +42,11 @@
 		"stylelint": "latest"
 	},
 	"scripts": {
-		"build": "gulp javascript:production && gulp sass:full && gulp sass:full:litepaper"
+		"build": "gulp javascript:production && gulp sass:full && gulp sass:full:litepaper && gulp minify"
 	},
 	"dependencies": {
 		"css-size": "^4.0.1",
+		"gulp-htmlmin": "^5.0.1",
 		"lodash.assign": "^4.2.0"
 	}
 }
