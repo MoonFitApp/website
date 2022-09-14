@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
       - name: Install dependencies
         run: yarn -i
       - name: Build dependencies
