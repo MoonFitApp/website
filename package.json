@@ -42,7 +42,7 @@
 		"stylelint": "latest"
 	},
 	"scripts": {
-		"build": "gulp javascript:production && gulp sass:full && gulp sass:full:litepaper && gulp minify"
+		"build": "gulp build"
 	},
 	"dependencies": {
 		"css-size": "^4.0.1",
