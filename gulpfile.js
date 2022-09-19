@@ -12,7 +12,6 @@ require('./gulp/tasks/zip');
 require('./gulp/tasks/html');
 require('./gulp/tasks/copy');
 
-
-gulp.task('build', gulp.series('copy', gulp.parallel('javascript:production', 'sass:full', 'sass:full:litepaper', 'minify-html')));
+gulp.task('build', gulp.series('copy-assets', gulp.parallel('javascript:production', 'sass:full', 'sass:full:litepaper', 'minify-html', 'copy-assets-litepaper')));
 
 gulp.task('default', gulp.series('todo', gulp.parallel('bs', 'sass', 'watch:main')));
