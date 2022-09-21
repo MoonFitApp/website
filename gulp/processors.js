@@ -1,9 +1,5 @@
 'use strict';
-var mqpacker     = require( 'css-mqpacker' ),
-    autoprefixer = require( 'autoprefixer' ),
-    assets       = require( 'postcss-assets' ),
-    pxtorem      = require( 'postcss-pxtorem' ),
-    path         = require( './paths' ).root.main;
+var autoprefixer = require( 'autoprefixer' );
 
 // Config PostCSS modules.
 module.exports = {
@@ -19,7 +15,7 @@ module.exports = {
 			browsers: [
 				'last 2 versions',
 				'> 1%',
-				'ie >= 9',
+				'ie >= 11',
 				'ie_mob >= 10',
 				'ff >= 30',
 				'chrome >= 34',
@@ -29,7 +25,6 @@ module.exports = {
 				'android >= 4',
 				'bb >= 10'
 			]
-		} ),
-		assets( { loadPaths: [ path + 'assets/images/', 'data/' ] } )
+		} )
 	]
 };
