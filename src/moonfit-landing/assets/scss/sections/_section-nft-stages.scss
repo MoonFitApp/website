@@ -56,11 +56,20 @@
 	}
 }
 
+.nft-stages-slider {
+	--swiper-content-v-align: stretch;
+
+	.swiper-slide {
+		height: auto;
+	}
+}
+
 .block-nft-stage {
 	--box-bg: #21063c;
 	--badge-bg: #541c8d;
 	padding: 60px 20px 26px;
 	border-radius: 10px;
+	height: 100%;
 	background: var(--box-bg);
 
 	.block-content {
@@ -255,6 +264,12 @@
 		.price-mint-pass {
 			background: url(../images/mint-pass.png) no-repeat center;
 		}
+	}
+
+	.stage-note {
+		font-size: 16px;
+		line-height: 26px;
+		margin: 0;
 	}
 
 	.button {
