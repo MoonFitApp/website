@@ -103,6 +103,81 @@
 	transform: translateX(-50%);
 }
 
+.get-on-app {
+	margin-top: 47px;
+
+	.button-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+
+		> * {
+			margin: 10px 10px 0;
+		}
+	}
+}
+
+.powered-by-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	max-width: 540px;
+	margin: 54px auto 0;
+
+	> div {
+		flex: 1 1 0px;
+		padding: 0 15px;
+
+		+ div {
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 1px;
+				height: 40px;
+				transform: translate(0, -50%);
+				background: #a8adc366;
+			}
+		}
+	}
+
+	.label {
+		display: block;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 26px;
+		margin: 0 0 4px;
+	}
+
+	.social-list {
+		margin: 8px 0 0;
+	}
+
+	.social-link {
+		color: #a8adc3;
+		margin: 7px;
+		font-size: 20px;
+
+		* {
+			width: 1em;
+			height: 1em;
+		}
+
+		svg *[fill] {
+			fill: currentColor;
+		}
+
+		&:hover {
+			color: #fff !important;
+		}
+	}
+}
+
 @media screen and (max-width: 1440px) {
 	.section-hero {
 		padding: 200px 0;

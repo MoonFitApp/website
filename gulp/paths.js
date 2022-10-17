@@ -16,10 +16,10 @@ module.exports = {
 	},
 	javascript: {
 		src: 'src/' + mainTheme + '/assets/js-code/**/*.js',
-		dist: 'dist/' + mainTheme + '/assets/js/',
+		dist: 'src/' + mainTheme + '/assets/js/',
 		litepaper: {
 			src: 'src/' + litepaper + '/assets/js-code/**/*.js',
-			dist: 'dist/' + litepaper + '/assets/js/'
+			dist: 'src/' + litepaper + '/assets/js/'
 		}
 	},
 	sass: {
@@ -29,7 +29,7 @@ module.exports = {
 		generate: [
 			'src/' + mainTheme + '/assets/scss/*.scss'
 		],
-		dist: 'dist/' + mainTheme + '/assets/css/',
+		dist: 'src/' + mainTheme + '/assets/css/',
 		litepaper: {
 			watch: [
 				'src/' + litepaper + '/assets/scss/**/*.scss'
@@ -37,7 +37,7 @@ module.exports = {
 			generate: [
 				'src/' + litepaper + '/assets/scss/*.scss'
 			],
-			dist: 'dist/' + litepaper + '/assets/css/',
+			dist: 'src/' + litepaper + '/assets/css/',
 		}
 	},
 	bs: {

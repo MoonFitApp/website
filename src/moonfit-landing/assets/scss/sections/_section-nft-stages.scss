@@ -122,8 +122,10 @@
 	}
 
 	&.active {
-		.badge-day-left {
-			--badge-width: 182px;
+		&:not(.sold-out ) {
+			.badge-day-left {
+				--badge-width: 182px;
+			}
 		}
 	}
 
