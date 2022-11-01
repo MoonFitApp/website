@@ -1,6 +1,6 @@
 .section-hero {
 	z-index: 1;
-	padding: 280px 0 281px;
+	padding: 280px 0 200px;
 	background: url(../images/hero-bg.jpg) no-repeat center;
 	background-size: cover;
 
@@ -98,7 +98,7 @@
 }
 
 .section-hero-shape-meteor {
-	bottom: 70px;
+	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -189,7 +189,7 @@
 
 @media screen and (max-width: 1440px) {
 	.section-hero {
-		padding: 200px 0;
+		padding: 200px 0 120px;
 
 		.section-title {
 			font-size: 36px;
@@ -199,11 +199,15 @@
 			font-size: 36px;
 		}
 	}
+
+	.section-hero-shape-meteor {
+		bottom: -90px;
+	}
 }
 
 @include media-breakpoint-down(md) {
 	.section-hero {
-		padding: 150px 0;
+		padding: 150px 0 70px;
 
 		.section-title {
 			font-size: 32px;
@@ -219,7 +223,7 @@
 	}
 
 	.section-hero-shape-meteor {
-		bottom: 40px;
+		bottom: -90px;
 	}
 }
 
@@ -232,8 +236,12 @@
 }
 
 @include media-breakpoint-down(sm) {
+	.section-hero-shape-meteor {
+		bottom: -60px;
+	}
+
 	.section-hero {
-		padding: 120px 0;
+		padding: 120px 0 50px;
 
 		.button-group {
 			margin-top: 20px;
@@ -258,10 +266,6 @@
 		.hero-image img {
 			max-width: 35vw;
 		}
-	}
-
-	.section-hero-shape-meteor {
-		bottom: 0;
 	}
 }
 
