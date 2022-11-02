@@ -115,53 +115,6 @@
 
 .footer-social-networks {
 	margin: 90px 0 0;
-
-	.inner {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		margin: 0 -7px;
-	}
-
-	.icon-wallet {
-		display: block;
-		background-color: currentColor;
-		-webkit-mask-image: url(../images/socials/wallet.png);
-		mask-image: url(../images/socials/wallet.png);
-		-webkit-mask-repeat: no-repeat;
-		mask-repeat: no-repeat;
-		-webkit-mask-position: center center;
-		mask-position: center center;
-	}
-}
-
-.footer-social-link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 60px;
-	height: 60px;
-	border-radius: 23px;
-	background: $primary-color;
-	color: $button-text !important;
-	margin: 7px;
-	font-size: 26px;
-
-	* {
-		width: 1em;
-		height: 1em;
-	}
-
-	svg *[fill] {
-		fill: currentColor;
-	}
-
-	&:hover {
-		color: $button-hover-text !important;
-		background: $button-hover-background;
-		box-shadow: 0 0 0 .2rem $button-hover-background;
-	}
 }
 
 .footer-widget-spacer {

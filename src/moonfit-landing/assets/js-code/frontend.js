@@ -6,17 +6,18 @@
 		    $window = $( window ),
 		    $header = $( '#header' );
 
-		$window.on( 'scroll', function() {
-			var currentST = $( this ).scrollTop();
-
-			if ( currentST > 0 ) {
-				$header.addClass( 'header-pinned' );
-			} else {
-				$header.removeClass( 'header-pinned' );
-			}
-		} );
-
 		$( document ).ready( function() {
+			var headerOffsetTop = $header.offset().top;
+			headerOffsetTop = Math.max( headerOffsetTop, 0 );
+
+			$window.on( 'scroll', function() {
+				if ( $( this ).scrollTop() > headerOffsetTop ) {
+					$header.addClass( 'header-pinned' );
+				} else {
+					$header.removeClass( 'header-pinned' );
+				}
+			} );
+
 			scrollTo();
 			//initVideoPopups();
 			initSliders();

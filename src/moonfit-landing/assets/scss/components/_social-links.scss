@@ -1,0 +1,71 @@
+#symbol-squircle {
+	.squircle {
+		fill: var(--squircle, $primary-color);
+	}
+}
+
+.social-list {
+	--item-size: 60px;
+	--item-spacing: 20px;
+
+	.inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		margin: 0 calc(var(--item-spacing) / -2);
+	}
+
+	.icon-wallet {
+		display: block;
+		background-color: currentColor;
+		-webkit-mask-image: url(../images/socials/wallet.png);
+		mask-image: url(../images/socials/wallet.png);
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		-webkit-mask-position: center center;
+		mask-position: center center;
+	}
+
+	a {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: var(--item-size);
+		height: var(--item-size);
+		color: var(--item-color, $button-text) !important;
+		margin: calc(var(--item-spacing) / 2);
+		font-size: var(--icon-size, 26px);
+		z-index: 0;
+
+		.squircle {
+			transition: all .35s cubic-bezier(.2, .75, .5, 1);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: var(--item-size);
+			height: var(--item-size);
+			z-index: -1;
+		}
+
+		svg:not(.squircle) {
+			width: 1em;
+			height: 1em;
+
+			*[fill]:not([fill='none']) {
+				fill: currentColor;
+			}
+
+			*[stroke]:not([stroke='none']) {
+				stroke: currentColor;
+			}
+		}
+
+		&:hover {
+			.squircle {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

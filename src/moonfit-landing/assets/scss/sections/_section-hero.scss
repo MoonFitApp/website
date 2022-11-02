@@ -125,12 +125,12 @@
 	text-align: center;
 	margin: 24px auto 0;
 	overflow: hidden;
-	width: 520px;
-	max-width: 100%;
+	/*width: 520px;
+	max-width: 100%;*/
 
 	> div {
 		margin: 30px 0 0;
-		flex: 0 0 260px;
+		flex: 0 0 350px;
 		max-width: 100%;
 		padding: 0 15px;
 
@@ -156,34 +156,15 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		line-height: 26px;
-		margin: 0 0 4px;
+		margin: 0 0 18px;
 	}
 
 	.social-list {
-		margin: 8px 0 0;
-	}
-
-	.social-link {
-		color: #a8adc3;
-		margin: 7px;
-		font-size: 20px;
-
-		* {
-			width: 1em;
-			height: 1em;
-		}
-
-		*[fill]:not([fill='none']) {
-			fill: currentColor;
-		}
-
-		*[stroke]:not([stroke='none']) {
-			stroke: currentColor;
-		}
-
-		&:hover {
-			color: #fff !important;
-		}
+		--item-size: 40px;
+		--icon-size: 20px;
+		--item-spacing: 10px;
+		--squircle: #452863;
+		--item-color: #fff;
 	}
 }
 
@@ -267,6 +248,18 @@
 			max-width: 35vw;
 		}
 	}
+
+	.powered-by-wrap > div {
+		flex: 0 0 100%;
+
+		+ div:before {
+			width: 80px;
+			height: 1px;
+			top: -15px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
 }
 
 @include media-breakpoint-down(xs) {
@@ -278,20 +271,6 @@
 
 		.button-group {
 			--gutter-x: 14px;
-		}
-	}
-}
-
-@media screen and (max-width: 580px) {
-	.powered-by-wrap > div {
-		flex: 0 0 100%;
-
-		+ div:before {
-			width: 80px;
-			height: 1px;
-			top: -15px;
-			left: 50%;
-			transform: translate(-50%, 0);
 		}
 	}
 }

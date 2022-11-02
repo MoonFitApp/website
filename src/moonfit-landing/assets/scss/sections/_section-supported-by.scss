@@ -1,5 +1,6 @@
 .section-intro {
 	background: url(../images/intro-bg.jpg) no-repeat top center;
+	background-size: 100% auto;
 }
 
 .section-supported-by {
@@ -7,8 +8,16 @@
 }
 
 .blocks-supported-by {
-	display: flex;
-	justify-content: center;
+	margin: 20px -12px 0;
+
+	.inner {
+		display: flex;
+		justify-content: center;
+	}
+
+	a {
+		padding: 5px 12px;
+	}
 }
 
 .block-supported-by {
