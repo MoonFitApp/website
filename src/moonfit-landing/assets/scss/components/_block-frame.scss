@@ -1,9 +1,11 @@
 .block-frame {
 	@extend %NormalTransition;
 	position: relative;
-	border-radius: 10px;
+	border-radius: var(--block-rounded, 10px);
+	z-index: 0;
 }
 
+// SVG.
 .block-frame-border {
 	position: absolute;
 	top: var(--outline-size, 0);
@@ -18,6 +20,48 @@
 		display: block;
 		width: 100%;
 		height: 100%;
+	}
+}
+
+.block-frame-gradient-border {
+	@extend %NormalTransition;
+	position: relative;
+	border-radius: var(--block-rounded, 10px);
+	z-index: 0;
+
+	&:before {
+		@extend %NormalTransition;
+		content: '';
+		position: absolute;
+		top: var(--outline-size, -2px);
+		left: var(--outline-size, -2px);
+		right: var(--outline-size, -2px);
+		bottom: var(--outline-size, -2px);
+		border-radius: inherit;
+		background: linear-gradient(135deg, #4ccbc9 0%, #b24294 100%);
+		opacity: 0;
+		z-index: -2;
+	}
+
+	&:after {
+		@extend %NormalTransition;
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: inherit;
+		background: var(--block-bg, #1c0532);
+		z-index: -1;
+	}
+
+	&:hover {
+		box-shadow: 0 4px 30px rgba(161, 107, 216, .5);
+
+		&:before {
+			opacity: 1;
+		}
 	}
 }
 

@@ -2,42 +2,23 @@
 	padding: 80px 0 30px;
 	background: url(../images/our-friends-bg.png) no-repeat top center;
 	background-size: 100% auto;
+}
 
-	.grid {
-		--columns: 6;
-		--gutter-x: 30px;
-		--gutter-y: 40px;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		margin-left: calc(-0.5 * var(--gutter-x));
-		margin-right: calc(-0.5 * var(--gutter-x));
-	}
-
-	.item {
-		@extend %NormalTransition;
-		width: calc(100% / var(--columns));
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 100px;
-		padding: calc(var(--gutter-y) / 2) calc(var(--gutter-x) / 2);
-	}
+.grid--friends {
+	--columns: 6;
+	--gutter-x: 30px;
+	--gutter-y: 40px;
+	--item-height: 100px;
 }
 
 @include media-breakpoint-down(sm) {
-	.section-our-friends {
-		.grid {
-			--columns: 4;
-		}
+	.grid--friends {
+		--columns: 4;
 	}
 }
 
 @include media-breakpoint-down(xs) {
-	.section-our-friends {
-		.grid {
-			--columns: 3;
-		}
+	.grid--friends {
+		--columns: 3;
 	}
 }

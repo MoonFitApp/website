@@ -1,12 +1,11 @@
 .grid-modern {
-	--grid-columns: 3;
-	--grid-row-gap: 30px;
-	--grid-column-gap: 30px;
-
 	display: grid;
-	grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
-	column-gap: var(--grid-column-gap);
-	row-gap: var(--grid-row-gap);
+	grid-template-columns: repeat(var(--grid-columns, 3), 1fr);
+	grid-gap: calc(1px * var(--grid-gutter, 30));
+
+	.grid-item {
+		min-width: 0;
+	}
 }
 
 // Fake layout. Improvement better display on page load.
@@ -43,73 +42,61 @@
 }
 
 @include moonfit-breakpoint-up(widescreen) {
-	.moonfit-grid-wrapper {
-		&[style*='--grid-columns-widescreen:'] {
-			--grid-columns: var(--grid-columns-widescreen);
-		}
+	[style*='--grid-columns-widescreen:'] {
+		--grid-columns: var(--grid-columns-widescreen);
+	}
 
-		&[style*='--grid-gutter-widescreen:'] {
-			--grid-gutter: var(--grid-gutter-widescreen);
-		}
+	[style*='--grid-gutter-widescreen:'] {
+		--grid-gutter: var(--grid-gutter-widescreen);
 	}
 }
 
 @include moonfit-breakpoint-down(laptop) {
-	.moonfit-grid-wrapper {
-		&[style*='--grid-columns-laptop:'] {
-			--grid-columns: var(--grid-columns-laptop);
-		}
+	[style*='--grid-columns-laptop:'] {
+		--grid-columns: var(--grid-columns-laptop);
+	}
 
-		&[style*='--grid-gutter-laptop:'] {
-			--grid-gutter: var(--grid-gutter-laptop);
-		}
+	[style*='--grid-gutter-laptop:'] {
+		--grid-gutter: var(--grid-gutter-laptop);
 	}
 }
 
 @include moonfit-breakpoint-down(tablet-extra) {
-	.moonfit-grid-wrapper {
-		&[style*='--grid-columns-tablet-extra:'] {
-			--grid-columns: var(--grid-columns-tablet-extra);
-		}
+	[style*='--grid-columns-tablet-extra:'] {
+		--grid-columns: var(--grid-columns-tablet-extra);
+	}
 
-		&[style*='--grid-gutter-tablet-extra:'] {
-			--grid-gutter: var(--grid-gutter-tablet-extra);
-		}
+	[style*='--grid-gutter-tablet-extra:'] {
+		--grid-gutter: var(--grid-gutter-tablet-extra);
 	}
 }
 
 @include moonfit-breakpoint-down(tablet) {
-	.moonfit-grid-wrapper {
-		&[style*='--grid-columns-tablet:'] {
-			--grid-columns: var(--grid-columns-tablet);
-		}
+	[style*='--grid-columns-tablet:'] {
+		--grid-columns: var(--grid-columns-tablet);
+	}
 
-		&[style*='--grid-gutter-tablet:'] {
-			--grid-gutter: var(--grid-gutter-tablet);
-		}
+	[style*='--grid-gutter-tablet:'] {
+		--grid-gutter: var(--grid-gutter-tablet);
 	}
 }
 
 @include moonfit-breakpoint-down(mobile-extra) {
-	.moonfit-grid-wrapper {
-		&[style*='--grid-columns-mobile-extra:'] {
-			--grid-columns: var(--grid-columns-mobile-extra);
-		}
+	[style*='--grid-columns-mobile-extra:'] {
+		--grid-columns: var(--grid-columns-mobile-extra);
+	}
 
-		&[style*='--grid-gutter-mobile-extra:'] {
-			--grid-gutter: var(--grid-gutter-mobile-extra);
-		}
+	[style*='--grid-gutter-mobile-extra:'] {
+		--grid-gutter: var(--grid-gutter-mobile-extra);
 	}
 }
 
 @include moonfit-breakpoint-down(mobile) {
-	.moonfit-grid-wrapper {
-		&[style*='--grid-columns-mobile:'] {
-			--grid-columns: var(--grid-columns-mobile);
-		}
+	[style*='--grid-columns-mobile:'] {
+		--grid-columns: var(--grid-columns-mobile);
+	}
 
-		&[style*='--grid-gutter-mobile:'] {
-			--grid-gutter: var(--grid-gutter-mobile);
-		}
+	[style*='--grid-gutter-mobile:'] {
+		--grid-gutter: var(--grid-gutter-mobile);
 	}
 }

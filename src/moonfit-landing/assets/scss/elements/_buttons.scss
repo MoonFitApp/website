@@ -49,7 +49,7 @@ input[type='submit'],
 .button-icon {
 	flex-shrink: 0;
 	line-height: 1;
-	margin: 0 8px 0 0;
+	margin: 0 var(--button-icon-spacing, 8px) 0 0;
 
 	svg {
 		display: block;
@@ -90,7 +90,7 @@ input[type='submit'],
 
 	&.icon-right {
 		.button-icon {
-			margin: 0 0 0 8px;
+			margin: 0 0 0 var(--button-icon-spacing, 8px);
 		}
 	}
 
@@ -159,12 +159,37 @@ input[type='submit'],
 	padding: 0 var(--button-hoz-padding);
 }
 
+// Download buttons.
+.get-on-app {
+	.button-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+
+		> * {
+			margin: 10px 10px 0;
+		}
+	}
+}
+
 @include media-breakpoint-up(md) {
 	.button {
 		&.button-size-lg {
 			--button-hoz-padding: 35px;
 			line-height: 26px;
 			min-height: 55px;
+		}
+
+		&.button-size-xl {
+			min-height: 64px;
+			padding: 0 34px;
+			font-size: 24px;
+			font-weight: 800;
+
+			.button-text {
+				padding-bottom: 5px;
+			}
 		}
 	}
 }

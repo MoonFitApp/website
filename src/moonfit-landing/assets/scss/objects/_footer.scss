@@ -173,10 +173,9 @@
 	}
 
 	.footer-social-link {
-		height: 50px;
-		width: 50px;
-		font-size: 20px;
-		border-radius: 16px;
+		--item-size: 50px;
+		--icon-size: 20px;
+		--item-spacing: 16px;
 	}
 
 	.footer-menu {
@@ -207,10 +206,9 @@
 	}
 
 	.footer-social-link {
-		height: 45px;
-		width: 45px;
-		font-size: 18px;
-		border-radius: 10px;
+		--item-size: 45px;
+		--icon-size: 18px;
+		--item-spacing: 10px;
 	}
 
 	.footer-widget-spacer {

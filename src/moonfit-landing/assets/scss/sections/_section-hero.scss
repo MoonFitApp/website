@@ -103,19 +103,8 @@
 	transform: translateX(-50%);
 }
 
-.get-on-app {
+.hero--get-on-app {
 	margin-top: 47px;
-
-	.button-wrap {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-
-		> * {
-			margin: 10px 10px 0;
-		}
-	}
 }
 
 .powered-by-wrap {

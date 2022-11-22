@@ -1,0 +1,22 @@
+.grid-flex {
+	--columns: 6;
+	--gutter-x: 30px;
+	--gutter-y: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-left: calc(-0.5 * var(--gutter-x));
+	margin-right: calc(-0.5 * var(--gutter-x));
+
+	> .item {
+		@extend %NormalTransition;
+		width: calc(100% / var(--columns));
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: var(--item-height, 0);
+		padding: calc(var(--gutter-y) / 2) calc(var(--gutter-x) / 2);
+	}
+}
+
