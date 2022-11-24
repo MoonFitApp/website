@@ -104,6 +104,20 @@
 		}
 	}
 
+	.nav-badge {
+		transform: translate(0, -50%);
+		display: inline-block;
+		padding: 0 5px 2px;
+		margin: 0 0 0 4px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		background: $secondary-color;
+		border-radius: 16px;
+		text-transform: none;
+	}
+
 	.sub-menu {
 		@extend %NormalTransition;
 		position: absolute;
@@ -205,6 +219,14 @@
 .nav-item--mobile-button {
 	> .button-group {
 		padding: 10px 1rem 10px !important;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.header {
+		> .container-full-gap-100 {
+			--bs-gutter-x: 50px !important;
+		}
 	}
 }
 
