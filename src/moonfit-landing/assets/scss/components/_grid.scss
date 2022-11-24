@@ -31,14 +31,12 @@
 	}
 }
 
-.moonfit-grid-wrapper {
-	&[style*='--grid-columns-desktop:'] {
-		--grid-columns: var(--grid-columns-desktop);
-	}
+[style*='--grid-columns-desktop:'] {
+	--grid-columns: var(--grid-columns-desktop);
+}
 
-	&[style*='--grid-gutter-desktop:'] {
-		--grid-gutter: var(--grid-gutter-desktop);
-	}
+[style*='--grid-gutter-desktop:'] {
+	--grid-gutter: var(--grid-gutter-desktop);
 }
 
 @include moonfit-breakpoint-up(widescreen) {

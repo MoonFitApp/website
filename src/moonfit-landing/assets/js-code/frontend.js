@@ -21,6 +21,7 @@
 			scrollTo();
 			//initVideoPopups();
 			initSliders();
+			handleNavigation();
 			handleNftStageDate();
 
 			$( '.block-countdown-timer' ).each( function( evt ) {
@@ -49,6 +50,27 @@
 				duration: 1000,
 				delay: 200,
 				once: true,
+			} );
+		}
+
+		function handleNavigation() {
+			var $nav        = $( '#primary-menu' ),
+			    $navToggler = $( '#navbar-toggler' );
+
+			$navToggler.on( 'click', function( evt ) {
+				evt.preventDefault();
+
+				$nav.toggleClass('opened');
+			} );
+
+			$( document ).on( 'click', function( e ) {
+				if ( $( e.target ).hasClass( 'navbar-toggler' ) ) {
+					return;
+				}
+
+				if ( $( e.target ).closest( $nav ).length === 0 ) {
+					$nav.removeClass('opened')
+				}
 			} );
 		}
 

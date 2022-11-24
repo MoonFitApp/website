@@ -40,6 +40,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+
+	.header-button {
+		--button-hoz-padding: 18px;
+	}
+
+	.button-group {
+		--gutter-x: 18px;
+		--gutter-y: 0;
+	}
 }
 
 .header-center {
@@ -47,8 +56,6 @@
 }
 
 .primary-menu {
-	display: none;
-
 	ul {
 		margin: 0;
 	}
@@ -80,8 +87,8 @@
 		color: #fff;
 
 		.nav-text {
+			display: inline-block;
 			position: relative;
-			display: block;
 
 			&:after {
 				content: '';
@@ -96,10 +103,28 @@
 			}
 		}
 	}
-}
 
-.primary-menu {
-	display: none;
+	.sub-menu {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		border-radius: 10px;
+		padding: 13px 0;
+		margin: 0;
+		background: #000315;
+		border: 2px solid $primary-color;
+		box-shadow: 0 4px 34px rgba(102, 225, 182, .3);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(20px);
+		min-width: 200px;
+
+		.nav-link {
+			font-size: 14px;
+			padding: 5px 1rem;
+		}
+	}
 }
 
 .navbar-toggler {
@@ -177,6 +202,12 @@
 	}
 }
 
+.nav-item--mobile-button {
+	> .button-group {
+		padding: 10px 1rem 10px !important;
+	}
+}
+
 @include media-breakpoint-down(md) {
 	.site-branding {
 		img {
@@ -185,15 +216,21 @@
 	}
 }
 
-@include media-breakpoint-down(xs) {
-	.header-right .header-button {
+@media screen and(min-width: 660px) {
+	.nav-item--mobile-button {
+		display: none;
+	}
+}
+
+@media screen and(max-width: 659px) {
+	.header-right .button-group {
 		display: none;
 	}
 }
 
 @media only screen and (min-width: 1100px) {
 	.primary-menu {
-		display: block;
+		display: block !important;
 
 		.nav {
 			justify-content: center;
@@ -202,5 +239,67 @@
 
 	.navbar-toggler {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 1099px) {
+	.primary-menu {
+		position: absolute;
+		top: 100%;
+		left: 15px;
+		right: 15px;
+		background-color: #000;
+		border: 2px solid #66e1b6;
+		box-shadow: 0 4px 34px rgba(102, 225, 182, .3);
+		border-radius: 10px;
+		transform: translateY(30px);
+		opacity: 0;
+		visibility: hidden;
+		transition: all .15s linear;
+
+		&.opened {
+			/*display: block;*/
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.nav-link {
+			padding: 6px 1rem;
+		}
+
+		.nav-text {
+			&:after {
+				bottom: 0;
+				height: 1px;
+			}
+		}
+
+		> ul {
+			display: flex;
+			padding: 13px 0;
+			margin: 0 -10px;
+
+			> li {
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding: 0 10px;
+				margin: 0 !important;
+			}
+		}
+
+		.sub-menu {
+			position: static;
+			top: auto;
+			right: auto;
+			transform: none;
+			border: 0;
+			background: none;
+			box-shadow: none;
+			opacity: 1;
+			visibility: visible;
+			margin: 0 0 0 20px;
+			padding: 0;
+		}
 	}
 }
