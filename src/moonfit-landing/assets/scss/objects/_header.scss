@@ -113,9 +113,13 @@
 		font-weight: 700;
 		line-height: 1;
 		color: #fff;
-		background: $secondary-color;
+		background: $primary-color;
 		border-radius: 16px;
 		text-transform: none;
+	}
+
+	.badge-hot {
+		background: $secondary-color;
 	}
 
 	.sub-menu {
@@ -222,6 +226,23 @@
 	}
 }
 
+@media screen and(max-width: 1400px) {
+	.primary-menu .nav-link {
+		padding: 10px 14px;
+		font-size: 16px;
+	}
+}
+
+@media screen and(max-width: 1240px) {
+	.primary-menu .nav-link {
+		padding: 5px 10px;
+	}
+
+	.header-right .header-button {
+		--button-hoz-padding: 12px;
+	}
+}
+
 @include media-breakpoint-up(lg) {
 	.header {
 		> .container-full-gap-100 {
@@ -277,6 +298,7 @@
 		transform: translateY(30px);
 		opacity: 0;
 		visibility: hidden;
+		pointer-events: none;
 		transition: all .15s linear;
 
 		&.opened {
@@ -284,6 +306,7 @@
 			transform: translateY(0);
 			opacity: 1;
 			visibility: visible;
+			pointer-events: auto;
 		}
 
 		.nav-link {
