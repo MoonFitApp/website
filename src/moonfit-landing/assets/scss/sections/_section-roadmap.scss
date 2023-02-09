@@ -521,6 +521,13 @@
                     }
                 }
             }
+
+
+            &.item-8 {
+                .roadmap-item-box {
+                    width: 350px;
+                }
+            }
         }
     }
 }
@@ -574,7 +581,6 @@
             transform: translateY(0px);
 
             .roadmap-item-box {
-                width: 350px;
                 position: relative;
                 margin: 0 0 50px;
 
