@@ -48,23 +48,32 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LJT5WH0KL"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push( arguments );
-		}
-		gtag( 'js', new Date() );
-		gtag( 'config', 'G-8LJT5WH0KL' );
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push( arguments );
+			}
+
+			gtag( 'js', new Date() );
+			gtag( 'config', 'G-8LJT5WH0KL' );
 	</script>
 	<!-- Hotjar Tracking Code for https://moonfit.xyz -->
 	<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:3036119,hjsv:6};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+			(
+				function ( h, o, t, j, a, r ) {
+					h.hj = h.hj || function () {
+						(
+							h.hj.q = h.hj.q || []
+						).push( arguments )
+					};
+					h._hjSettings = {hjid: 3036119, hjsv: 6};
+					a = o.getElementsByTagName( 'head' )[0];
+					r = o.createElement( 'script' );
+					r.async = 1;
+					r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+					a.appendChild( r );
+				}
+			)( window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=' );
 	</script>
 	<!-- @formatter:off -->
 </head>
@@ -92,7 +101,9 @@
 		      stroke="url(#block-frame-border-linear)" stroke-width="6"></rect>
 	</symbol>
 	<symbol id="symbol-squircle" viewBox="0 0 40 40" fill="none">
-		<path class="squircle" d="M20 0C35.1658 0 40 4.83421 40 20C40 35.1658 35.1658 40 20 40C4.83421 40 0 35.1658 0 20C0 4.83421 4.83421 0 20 0Z" fill="#452863"></path>
+		<path class="squircle"
+		      d="M20 0C35.1658 0 40 4.83421 40 20C40 35.1658 35.1658 40 20 40C4.83421 40 0 35.1658 0 20C0 4.83421 4.83421 0 20 0Z"
+		      fill="#452863"></path>
 	</symbol>
 </svg>
 
@@ -104,10 +115,13 @@
 			<img src="./assets/images/moonfit-n-moonbeam.png" alt="Moonfit x Moonbeam" width="237" height="22"/>
 		</div>
 		<div class="announcement-bar--text">MoonFit - Bring Blockchain to Real-life.
-			<a href="https://twitter.com/MoonbeamNetwork/status/1587503622648209408" target="_blank" rel="nofollow"><span>Click for details</span>
+			<a href="https://twitter.com/MoonbeamNetwork/status/1587503622648209408" target="_blank"
+			   rel="nofollow"><span>Click for details</span>
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M2.5 8H13.5" stroke="#4CCBC9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M9 3.5L13.5 8L9 12.5" stroke="#4CCBC9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M2.5 8H13.5" stroke="#4CCBC9" stroke-width="1.5" stroke-linecap="round"
+					      stroke-linejoin="round"/>
+					<path d="M9 3.5L13.5 8L9 12.5" stroke="#4CCBC9" stroke-width="1.5" stroke-linecap="round"
+					      stroke-linejoin="round"/>
 				</svg>
 			</a>
 		</div>
@@ -116,80 +130,75 @@
 
 <div class="page-wrapper">
 	<header id="header" class="header">
-	<div class="container-full-gap-100">
-		<div class="header-inner">
-			<div class="header-left">
-				<div class="site-branding">
-					<a href="/" id="logo">
-						<img loading="lazy"
-						     alt="MoonFit - Web3 & NFT Lifestyle App"
-						     src="./assets/images/logo/logo.png"
-						/>
-					</a>
+		<div class="container-full-gap-100">
+			<div class="header-inner">
+				<div class="header-left">
+					<div class="site-branding">
+						<a href="/" id="logo">
+							<img loading="lazy"
+							     alt="MoonFit - Web3 & NFT Lifestyle App"
+							     src="./assets/images/logo/logo.png"
+							/>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="header-center">
-				<nav id="primary-menu" class="primary-menu">
-					<ul class="nav">
-						<li class="nav-item">
-							<a class="nav-link" href="/">
-								<span class="nav-text">Homepage</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/litepaper/">
-								<span class="nav-text">Litepaper</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://whitepaper.moonfit.xyz/" target="_blank">
-								<span class="nav-text">Whitepaper</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://event.moonfit.xyz/" target="_blank">
-								<span class="nav-text">Events</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/how-to-play/">
-								<span class="nav-text">How to play</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://app.moonfit.xyz/mint-pass">
-								<span class="nav-text">Mint Pass</span>
-							</a>
-						</li>
-						<li class="nav-item nav-item--mobile-button">
-							<div class="button-group">
-								<a href="/ambassadors/" class="header-button button button-secondary">
-									<span class="button-text">Ambassador Program</span>
+				<div class="header-center">
+					<nav id="primary-menu" class="primary-menu">
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="/">
+									<span class="nav-text">Homepage</span>
 								</a>
-								<a href="https://moonfit.gitbook.io/" target="_blank" class="header-button button button-primary">
-									<span class="button-text">Whitepaper</span>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/litepaper/">
+									<span class="nav-text">Litepaper</span>
 								</a>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="header-right">
-				<div class="button-group">
-					<a href="/ambassadors/" class="header-button button button-secondary">
-						<span class="button-text">Ambassador Program</span>
-					</a>
-					<a href="https://moonfit.gitbook.io/" target="_blank" class="header-button button button-primary">
-						<span class="button-text">Whitepaper</span>
-					</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://whitepaper.moonfit.xyz/" target="_blank">
+									<span class="nav-text">Whitepaper</span>
+								</a>
+							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" href="https://event.moonfit.xyz/" target="_blank">
+									<span class="nav-text">Rewards<mark class="nav-badge badge-new">New</mark></span>
+								</a>
+							</li> -->
+							<li class="nav-item">
+								<a class="nav-link" href="/how-to-play/">
+									<span class="nav-text">How to play</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://app.moonfit.xyz/nft-sale">
+									<span class="nav-text">Mint NFT<mark class="nav-badge badge-hot">Hot</mark></span>
+								</a>
+							</li>
+							<li class="nav-item nav-item--mobile-button">
+								<div class="button-group">
+									<a href="/ambassadors/" class="header-button button button-secondary">
+										<span class="button-text">Ambassador Program</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<button id="navbar-toggler" class="navbar-toggler collapsed" type="button" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<div class="header-right">
+					<div class="button-group">
+						<a href="/ambassadors/" class="header-button button button-secondary">
+							<span class="button-text">Ambassador Program</span>
+						</a>
+					</div>
+					<button id="navbar-toggler" class="navbar-toggler collapsed" type="button" aria-controls="navbar"
+					        aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
 			</div>
 		</div>
-	</div>
-</header>
+	</header>
 	<div id="main-content" class="main-content">
 		<div class="section section-hero" id="section-hero">
 			<div class="section-shape section-hero-shape-meteor">
@@ -258,11 +267,15 @@
 								</div>-->
 								<div class="get-on-app hero--get-on-app">
 									<div class="button-wrap">
-										<a href="https://play.google.com/apps/testing/xyz.moonfit.app" target="_blank" class="button-image btn-google-play">
-											<img src="./assets/images/download/google-play@2x.png" alt="Get it on Google Play" width="150" height="50"/>
+										<a href="https://play.google.com/apps/testing/xyz.moonfit.app" target="_blank"
+										   class="button-image btn-google-play">
+											<img src="./assets/images/download/google-play@2x.png"
+											     alt="Get it on Google Play" width="150" height="50"/>
 										</a>
-										<a href="https://testflight.apple.com/join/lfXF5Lbd" target="_blank" class="button-image btn-app-store">
-											<img src="./assets/images/download/app-store@2x.png" alt="Get it on App Store" width="150" height="50"/>
+										<a href="https://testflight.apple.com/join/lfXF5Lbd" target="_blank"
+										   class="button-image btn-app-store">
+											<img src="./assets/images/download/app-store@2x.png"
+											     alt="Get it on App Store" width="150" height="50"/>
 										</a>
 									</div>
 
@@ -272,10 +285,13 @@
 											<div class="blocks-supported-by">
 												<div class="inner">
 													<a href="https://moonbeam.foundation/" target="_blank">
-														<img src="./assets/images/moonbeam-foundation.png" alt="Moonbeam Foundation" width="130" height="39" loading="lazy">
+														<img src="./assets/images/moonbeam-foundation.png"
+														     alt="Moonbeam Foundation" width="130" height="39"
+														     loading="lazy">
 													</a>
 													<a href="https://subwallet.app/" target="_blank">
-														<img src="./assets/images/subwallet.png" alt="SubWallet" loading="lazy" width="106" height="36">
+														<img src="./assets/images/subwallet.png" alt="SubWallet"
+														     loading="lazy" width="106" height="36">
 													</a>
 												</div>
 											</div>
@@ -284,7 +300,8 @@
 											<span class="label">Our socials</span>
 											<div class="social-list hero-social-list">
 												<div class="inner">
-													<a href="https://twitter.com/MoonFitOfficial" target="_blank" rel="nofollow"
+													<a href="https://twitter.com/MoonFitOfficial" target="_blank"
+													   rel="nofollow"
 													   class="social-link twitter">
 														<svg class="squircle">
 															<use xlink:href="#symbol-squircle"></use>
@@ -296,7 +313,8 @@
 																fill="#020722"/>
 														</svg>
 													</a>
-													<a href="https://www.instagram.com/moonfit_official/" target="_blank" rel="nofollow"
+													<a href="https://www.instagram.com/moonfit_official/"
+													   target="_blank" rel="nofollow"
 													   class="social-link instagram">
 														<svg class="squircle">
 															<use xlink:href="#symbol-squircle"></use>
@@ -308,7 +326,8 @@
 																fill="#020722"/>
 														</svg>
 													</a>
-													<a href="https://t.me/moonfit_official/" target="_blank" rel="nofollow"
+													<a href="https://t.me/moonfit_official/" target="_blank"
+													   rel="nofollow"
 													   class="social-link telegram">
 														<svg class="squircle">
 															<use xlink:href="#symbol-squircle"></use>
@@ -320,7 +339,8 @@
 																fill="#020722"/>
 														</svg>
 													</a>
-													<a href="https://discord.gg/wmQawxMetz" target="_blank" rel="nofollow"
+													<a href="https://discord.gg/wmQawxMetz" target="_blank"
+													   rel="nofollow"
 													   class="social-link discord">
 														<svg class="squircle">
 															<use xlink:href="#symbol-squircle"></use>
@@ -344,12 +364,16 @@
 																fill="#020722"/>
 														</svg>
 													</a>
-													<a href="https://linktr.ee/moonfit" target="_blank" rel="nofollow" class="social-link linktree">
+													<a href="https://linktr.ee/moonfit" target="_blank" rel="nofollow"
+													   class="social-link linktree">
 														<svg class="squircle">
 															<use xlink:href="#symbol-squircle"></use>
 														</svg>
-														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M11.2678 19.0007H8.66338V13.1195H11.2678V19.0007ZM17.2958 9.57008H12.8428L16.0143 12.6508L14.2711 14.401L9.96561 10.0741L5.65946 14.401L3.91623 12.6578L7.08769 9.577H2.63477V7.09162H7.06692L3.91623 4.08769L5.65946 2.30223L8.66338 5.38992V1H11.2678V5.38992L14.2711 2.30223L16.0143 4.08769L12.8636 7.09162H17.2958V9.57008Z" fill="#000"/>
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														     xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M11.2678 19.0007H8.66338V13.1195H11.2678V19.0007ZM17.2958 9.57008H12.8428L16.0143 12.6508L14.2711 14.401L9.96561 10.0741L5.65946 14.401L3.91623 12.6578L7.08769 9.577H2.63477V7.09162H7.06692L3.91623 4.08769L5.65946 2.30223L8.66338 5.38992V1H11.2678V5.38992L14.2711 2.30223L16.0143 4.08769L12.8636 7.09162H17.2958V9.57008Z"
+																fill="#000"/>
 														</svg>
 													</a>
 												</div>
@@ -379,7 +403,8 @@
 					<img loading="lazy" src="./assets/images/shapes/beast-2.png" alt="beast" width="116" height="140"/>
 				</div>
 				<div class="section-shape section-beauty-3 move-vertical">
-					<img loading="lazy" src="./assets/images/shapes/beauty-3.png" alt="beauty" width="139" height="177"/>
+					<img loading="lazy" src="./assets/images/shapes/beauty-3.png" alt="beauty" width="139"
+					     height="177"/>
 				</div>
 				<div class="container">
 					<div class="section-header">
@@ -436,14 +461,16 @@
 														</ul>
 													</li>
 												</ul>
-												<a target="_blank" href="https://app.moonfit.xyz/nft-sale" class="stage-connect button button-secondary">
+												<a target="_blank" href="https://app.moonfit.xyz/nft-sale"
+												   class="stage-connect button button-secondary">
 													<span class="button-text">Connect Wallet & Join Now</span>
 												</a>
 											</div>
 										</div>
 									</div>
 									<div class="swiper-slide">
-										<div class="block-nft-stage block-frame active" data-time="2022-09-24T14:00:00.000Z">
+										<div class="block-nft-stage block-frame active"
+										     data-time="2022-09-24T14:00:00.000Z">
 											<div class="block-frame-border">
 												<svg width="100" height="100">
 													<use xlink:href="#block-frame-border-rd-10-size-3"></use>
@@ -481,7 +508,8 @@
 													</li>
 												</ul>
 												<p class="stage-note">Maximum Mint 2 MoonBeast/Mint Pass</p>
-												<a target="_blank" href="https://app.moonfit.xyz/nft-sale" class="stage-connect button button-secondary">
+												<a target="_blank" href="https://app.moonfit.xyz/nft-sale"
+												   class="stage-connect button button-secondary">
 													<span class="button-text">Connect Wallet & Join Now</span>
 												</a>
 											</div>
@@ -523,7 +551,8 @@
 														</ul>
 													</li>
 												</ul>
-												<a target="_blank" href="https://app.moonfit.xyz/nft-sale" class="stage-connect button button-secondary">
+												<a target="_blank" href="https://app.moonfit.xyz/nft-sale"
+												   class="stage-connect button button-secondary">
 													<span class="button-text">Connect Wallet & Join Now</span>
 												</a>
 											</div>
@@ -565,7 +594,8 @@
 														</ul>
 													</li>
 												</ul>
-												<a target="_blank" href="https://app.moonfit.xyz/nft-sale" class="stage-connect button button-secondary">
+												<a target="_blank" href="https://app.moonfit.xyz/nft-sale"
+												   class="stage-connect button button-secondary">
 													<span class="button-text">Connect Wallet & Join Now</span>
 												</a>
 											</div>
@@ -597,7 +627,8 @@
 										     height="93"/>
 									</div>
 									<div class="section-shape shape-diamond-red move-vertical">
-										<img loading="lazy" src="./assets/images/shapes/diamond-red.png" alt="shape" width="57"
+										<img loading="lazy" src="./assets/images/shapes/diamond-red.png" alt="shape"
+										     width="57"
 										     height="59"/>
 									</div>
 									<img loading="lazy" src="./assets/images/universe-image.png" alt="MoonFit Universe"
@@ -610,10 +641,14 @@
 								<div class="section-header-inner">
 									<h4 class="section-title">The Story</h4>
 									<div class="section-description-wrap">
-										<p class="section-description">At the beginning of time in the vast MoonFit universe,
-											only ten thousand MoonBeasts roam free. Female and male MoonBeasts, known as Beauty
-											and Beast, are each by themselves on the quest to find the other half. They must
-											burn calories to become stronger and more attractive, with the hope of winning love
+										<p class="section-description">At the beginning of time in the vast MoonFit
+											universe,
+											only ten thousand MoonBeasts roam free. Female and male MoonBeasts, known as
+											Beauty
+											and Beast, are each by themselves on the quest to find the other half. They
+											must
+											burn calories to become stronger and more attractive, with the hope of
+											winning love
 											and bearing offspring, thus populating the universe.</p>
 									</div>
 									<div class="section-call-out-action button-group">
@@ -716,7 +751,8 @@
 												     alt="Leveling System" width="69" height="69"/>
 											</div>
 											<h3 class="block-game-feature-title">Leveling System</h3>
-											<div class="block-game-feature-description">Level up your MoonBeast and increase
+											<div class="block-game-feature-description">Level up your MoonBeast and
+												increase
 												earning chance
 
 											</div>
@@ -736,7 +772,8 @@
 												     alt="MoonShop" width="69" height="55"/>
 											</div>
 											<h3 class="block-game-feature-title">MoonShop</h3>
-											<div class="block-game-feature-description">Pick and purchase real items with a few
+											<div class="block-game-feature-description">Pick and purchase real items
+												with a few
 												taps
 											</div>
 										</div>
@@ -755,7 +792,8 @@
 												     alt="Marketplace" width="62" height="62"/>
 											</div>
 											<h3 class="block-game-feature-title">Marketplace</h3>
-											<div class="block-game-feature-description">Trade your NFTS securely with blockchain
+											<div class="block-game-feature-description">Trade your NFTS securely with
+												blockchain
 												technology
 											</div>
 										</div>
@@ -774,7 +812,8 @@
 												     alt="MoonItem NFT" width="62" height="62"/>
 											</div>
 											<h3 class="block-game-feature-title">MoonItem NFT</h3>
-											<div class="block-game-feature-description">Equip your MoonBeasts and boost their
+											<div class="block-game-feature-description">Equip your MoonBeasts and boost
+												their
 												abilities
 											</div>
 										</div>
@@ -793,7 +832,8 @@
 												     alt="Clan/Group Running" width="80" height="80"/>
 											</div>
 											<h3 class="block-game-feature-title">Clan | Group Training</h3>
-											<div class="block-game-feature-description">Train with friends and have more fun!
+											<div class="block-game-feature-description">Train with friends and have more
+												fun!
 											</div>
 										</div>
 									</div>
@@ -807,7 +847,8 @@
 
 		<div class="section section-web3-nft" id="move-to-earn">
 			<div class="section-shape section-shape-promoting-bg">
-				<img loading="lazy" src="./assets/images/promoting-bg.jpg" alt="Promoting an active lifestyle" width="1920"
+				<img loading="lazy" src="./assets/images/promoting-bg.jpg" alt="Promoting an active lifestyle"
+				     width="1920"
 				     height="340">
 			</div>
 			<div class="section-content">
@@ -858,7 +899,8 @@
 							</svg>
 							<div class="content">
 								<h3 class="title">Pick your sports</h3>
-								<p class="description">You get rewards as long as you burn calories, no matter which sports
+								<p class="description">You get rewards as long as you burn calories, no matter which
+									sports
 									you
 									play</p>
 							</div>
@@ -882,8 +924,10 @@
 							</div>
 						</div>
 						<div class="block-heading-frame block-heading-03">
-							<svg width="98" height="78" viewBox="0 0 98 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M98 1H81.052L0.999996 77" stroke="url(#paint0_linear_36_939)" stroke-width="2"/>
+							<svg width="98" height="78" viewBox="0 0 98 78" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path d="M98 1H81.052L0.999996 77" stroke="url(#paint0_linear_36_939)"
+								      stroke-width="2"/>
 								<defs>
 									<linearGradient id="paint0_linear_36_939" x1="40.7187" y1="25.9706" x2="40.7187"
 									                y2="77.0001" gradientUnits="userSpaceOnUse">
@@ -943,11 +987,13 @@
 
 		<div class="section section-tokenomic" id="tokenomic">
 			<div class="section-shape section-shape-blur-01">
-				<img loading="lazy" src="./assets/images/shapes/blur-01.png" alt="Promoting an active lifestyle" width="414"
+				<img loading="lazy" src="./assets/images/shapes/blur-01.png" alt="Promoting an active lifestyle"
+				     width="414"
 				     height="632">
 			</div>
 			<div class="section-shape section-shape-blur-02">
-				<img loading="lazy" src="./assets/images/shapes/blur-02.png" alt="Promoting an active lifestyle" width="790"
+				<img loading="lazy" src="./assets/images/shapes/blur-02.png" alt="Promoting an active lifestyle"
+				     width="790"
 				     height="580">
 			</div>
 			<div class="section-content">
@@ -1015,7 +1061,8 @@
 									</div>
 									<ul class="token-info-list">
 										<li>
-											<span class="icon-check-circle"></span>Upgrade in-game character, keep fit & grow your clan
+											<span class="icon-check-circle"></span>Upgrade in-game character, keep fit &
+											grow your clan
 										</li>
 										<li>
 											<span class="icon-check-circle"></span>210 million total supply
@@ -1061,6 +1108,10 @@
 					<div class="section-header">
 						<div class="section-header-inner">
 							<h3 class="section-title">Roadmap</h3>
+							<div class="section-description-wrap">
+								<p class="section-description">We aim to create the best web3 lifestyle app for our
+									community, more features & integrations will be added soon</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1101,7 +1152,7 @@
 							<img src="./assets/images/roadmap/star.png" alt="road">
 						</div>
 						<div class="roadmap-road">
-							<img src="./assets/images/roadmap/road.png" alt="road">
+							<img src="./assets/images/roadmap/road2.png" alt="road">
 						</div>
 						<div class="roadmap-dot-light">
 							<img src="./assets/images/roadmap/dot-light.png" alt="the dot light">
@@ -1120,6 +1171,9 @@
 						</div>
 						<div class="roadmap-dot-light-5">
 							<img src="./assets/images/roadmap/dot-light-5.png" alt="the dot light">
+						</div>
+						<div class="roadmap-dot-light-6">
+							<img src="./assets/images/roadmap/dot-light-6.png" alt="the dot light">
 						</div>
 
 						<div class="roadmap-item item-1">
@@ -1143,10 +1197,10 @@
 								<div class="item-wrapper">
 									<h3>MAY 2022</h3>
 									<ul>
-										<li class="task-done">IOS & Android MVP</li>
-										<li class="task-done">System & UI Kits Design</li>
+										<li class="task-done">IOS & Android MVP finished</li>
+										<li class="task-done">Design system & UI Kits</li>
 										<li class="task-done">Mockup Design</li>
-										<li class="task-done">Game Mechanism & Documents</li>
+										<li class="task-done">Game Mechanisms & Documents</li>
 									</ul>
 								</div>
 
@@ -1159,11 +1213,11 @@
 						<div class="roadmap-item item-3">
 							<div class="roadmap-item-box">
 								<div class="item-wrapper">
-									<h3>Jun 2022</h3>
+									<h3>JUN 2022</h3>
 									<ul>
 										<li class="task-done">Internal & Private Test</li>
 										<li class="task-done">Marketing Kickoff</li>
-										<li class="task-done">Bugs Fixing & Game Balancing</li>
+										<li class="task-done">Fixing Bugs & Game Balancing</li>
 										<li class="task-done">Marketplace Feature</li>
 									</ul>
 								</div>
@@ -1198,11 +1252,10 @@
 								<div class="item-wrapper">
 									<h3>Q4 2022</h3>
 									<ul>
-										<li>Incentivized Testnet #1</li>
-										<li>Community Events</li>
-										<li>Deposit Assets</li>
-										<li>Social Features</li>
-										<li>Referral</li>
+										<li class="task-done">Incentivized Testnet #1</li>
+										<li class="task-done">Community Events</li>
+										<li class="task-done">Deposit Assets</li>
+										<li class="task-done">Social Features</li>
 									</ul>
 								</div>
 
@@ -1215,16 +1268,70 @@
 						<div class="roadmap-item item-6">
 							<div class="roadmap-item-box">
 								<div class="item-wrapper">
-									<h3>2023 & Beyond</h3>
+									<h3>Q1 2023</h3>
 									<ul>
-										<li>IDO</li>
-										<li>Land Renting Feature</li>
-										<li>Staking</li>
+										<li class="task-done">Daily Missions</li>
+										<li class="task-done">Mini Games</li>
+										<li class="task-done">Community Monthly Challenge</li>
+										<li>Referral</li>
+										<li>Free-users-approach</li>
+									</ul>
+								</div>
+
+								<div class="roadmap-light-vertical">
+									<img src="./assets/images/roadmap/light-vertical.png" alt="light vertical">
+								</div>
+							</div>
+						</div>
+
+						<div class="roadmap-item item-7">
+							<div class="roadmap-item-box">
+								<div class="item-wrapper">
+									<h3>Q2 2023</h3>
+									<ul>
+										<li>PVP Challenge</li>
+										<li>Wearable devices integration</li>
+										<li>Badge system</li>
+										<li>Multi-chain Expand</li>
+									</ul>
+								</div>
+
+								<div class="roadmap-light-vertical">
+									<img src="./assets/images/roadmap/light-vertical.png" alt="light vertical">
+								</div>
+							</div>
+						</div>
+
+						<div class="roadmap-item item-8">
+							<div class="roadmap-item-box">
+								<div class="item-wrapper">
+									<h3>Q3 2023</h3>
+									<ul>
+										<li>Incentivized Testnet Phase 2</li>
+										<li>Ambassadors Batch 2</li>
+										<li>New NFT Sale Rounds</li>
+										<li>IDO (Consider the Market sentiment)</li>
 										<li>Moonshop</li>
-										<li>DAO</li>
-										<li>Official Release</li>
+										<li>Background Mode</li>
+									</ul>
+								</div>
+
+								<div class="roadmap-light-vertical">
+									<img src="./assets/images/roadmap/light-vertical.png" alt="light vertical">
+								</div>
+							</div>
+						</div>
+
+						<div class="roadmap-item item-9">
+							<div class="roadmap-item-box">
+								<div class="item-wrapper">
+									<h3>Q4 2023</h3>
+									<ul>
+										<li>Breeding</li>
+										<li>Official Launch</li>
+										<li>Virtual Running Event</li>
 										<li>Add more sports</li>
-										<li>Marathon/Racing Features</li>
+										<li>Staking</li>
 									</ul>
 								</div>
 
@@ -1245,64 +1352,105 @@
 						<div class="section-header-inner">
 							<h3 class="section-title">Our Friends</h3>
 							<div class="section-description-wrap">
-								<p class="section-description">We want to express our sincere gratitude to our friends who helped us improve the product and catch the community's attention.</p>
+								<p class="section-description">We want to express our sincere gratitude to our friends
+									who helped us improve the product and catch the community's attention.</p>
 							</div>
 						</div>
 					</div>
 					<div class="grid-flex grid--friends">
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/TFAlphaDao/status/1564296962979303424">
-							<img loading="lazy" src="./assets/images/friends/tfalpha.png" alt="TFAlphaDao" width="113" height="113"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/TFAlphaDao/status/1564296962979303424">
+							<img loading="lazy" src="./assets/images/friends/tfalpha.png" alt="TFAlphaDao" width="113"
+							     height="113"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/NetworkSubspace/status/1583503476415340550">
-							<img loading="lazy" src="./assets/images/friends/subspace-network.png" alt="Subspace" width="170" height="31"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/NetworkSubspace/status/1583503476415340550">
+							<img loading="lazy" src="./assets/images/friends/subspace-network.png" alt="Subspace"
+							     width="170" height="31"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/CertHum/status/1556335504400039938">
-							<img loading="lazy" src="./assets/images/friends/certhum.png" alt="Certhum" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/CertHum/status/1556335504400039938">
+							<img loading="lazy" src="./assets/images/friends/certhum.png" alt="Certhum" width="100"
+							     height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/MoonFitOfficial/status/1566979670796808194">
-							<img loading="lazy" src="./assets/images/friends/dam-finance.png" alt="DAM FInance" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/MoonFitOfficial/status/1566979670796808194">
+							<img loading="lazy" src="./assets/images/friends/dam-finance-v2.png" alt="DAM FInance"
+							     width="100" height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/AstarTroopers/status/1561587187027546114">
-							<img loading="lazy" src="./assets/images/friends/astar-troopers.png" alt="Astar Troopers" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/AstarTroopers/status/1561587187027546114">
+							<img loading="lazy" src="./assets/images/friends/astar-troopers.png" alt="Astar Troopers"
+							     width="100" height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/tofuNFT/status/1572919702133047296">
-							<img loading="lazy" src="./assets/images/friends/tofunft.png" alt="Tofu NFT" width="82" height="77"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/tofuNFT/status/1572919702133047296">
+							<img loading="lazy" src="./assets/images/friends/tofunft.png" alt="Tofu NFT" width="82"
+							     height="77"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://moonbeans.io/collections/moonfitbeastbeauty">
-							<img loading="lazy" src="./assets/images/friends/moonbeans.png" alt="Moonbean" width="169" height="85"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/Beamswapio">
+							<img loading="lazy" src="./assets/images/friends/beamswap.png" alt="Beamswap" width="90"
+							     height="90"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/Mintverse_/status/1559886592101167105">
-							<img loading="lazy" src="./assets/images/friends/mintverse.png" alt="Mintverse" width="161" height="55"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://moonbeans.io/collections/moonfitbeastbeauty">
+							<img loading="lazy" src="./assets/images/friends/moonbeans.png" alt="Moonbean" width="169"
+							     height="85"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/MoonFitOfficial/status/1562351101474918402">
-							<img loading="lazy" src="./assets/images/friends/nftrade.png" alt="NFTrade" width="148" height="23"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/Mintverse_/status/1559886592101167105">
+							<img loading="lazy" src="./assets/images/friends/mintverse.png" alt="Mintverse" width="161"
+							     height="55"/>
+						</a>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/MoonFitOfficial/status/1562351101474918402">
+							<img loading="lazy" src="./assets/images/friends/nftrade.png" alt="NFTrade" width="148"
+							     height="23"/>
 						</a>
 						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/myNFT">
-							<img loading="lazy" src="./assets/images/friends/mynft.png" alt="My NFT" width="123" height="40"/>
+							<img loading="lazy" src="./assets/images/friends/mynft.png" alt="My NFT" width="123"
+							     height="40"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/ZooDAO/status/1570798374017970178">
-							<img loading="lazy" src="./assets/images/friends/zoodao.png" alt="ZooDAO" width="151" height="32"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/ZooDAO/status/1570798374017970178">
+							<img loading="lazy" src="./assets/images/friends/zoodao.png" alt="ZooDAO" width="151"
+							     height="32"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/dtmb_xyz/status/1564703128850780161 ">
-							<img loading="lazy" src="./assets/images/friends/downtown-moonbeam.png" alt="DTMB" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/dtmb_xyz/status/1564703128850780161 ">
+							<img loading="lazy" src="./assets/images/friends/downtown-moonbeam.png" alt="DTMB"
+							     width="100" height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/GlmrNews/status/1540655900096188417 ">
-							<img loading="lazy" src="./assets/images/friends/glmr-news.png" alt="GLMR News" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/GlmrNews/status/1540655900096188417 ">
+							<img loading="lazy" src="./assets/images/friends/glmr-news.png" alt="GLMR News" width="100"
+							     height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=pMkVqEIJLOM">
-							<img loading="lazy" src="./assets/images/friends/kusamarian.png" alt="Kusamarian" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://www.youtube.com/watch?v=pMkVqEIJLOM">
+							<img loading="lazy" src="./assets/images/friends/kusamarian.png" alt="Kusamarian"
+							     width="100" height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://www.youtube.com/shorts/GCIRkeLlhwU">
-							<img loading="lazy" src="./assets/images/friends/alpha-airdrop.png" alt="Alpha Airdrop" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://www.youtube.com/shorts/GCIRkeLlhwU">
+							<img loading="lazy" src="./assets/images/friends/alpha-airdrop.png" alt="Alpha Airdrop"
+							     width="100" height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/ThePhunky1/status/1555235297260175360">
-							<img loading="lazy" src="./assets/images/friends/thephunky1.png" alt="The Phunky One" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/ThePhunky1/status/1555235297260175360">
+							<img loading="lazy" src="./assets/images/friends/thephunky1.png" alt="The Phunky One"
+							     width="100" height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/MoonFitOfficial/status/1558406461554053121">
-							<img loading="lazy" src="./assets/images/friends/dustin-lee.png" alt="Dustin Lee" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/MoonFitOfficial/status/1558406461554053121">
+							<img loading="lazy" src="./assets/images/friends/dustin-lee.png" alt="Dustin Lee"
+							     width="100" height="100"/>
 						</a>
-						<a class="item" target="_blank" rel="nofollow" href="https://twitter.com/TheAltfather007/status/1580569398024495110">
-							<img loading="lazy" src="./assets/images/friends/kilt-father.png" alt="Kilt Father" width="100" height="100"/>
+						<a class="item" target="_blank" rel="nofollow"
+						   href="https://twitter.com/TheAltfather007/status/1580569398024495110">
+							<img loading="lazy" src="./assets/images/friends/kilt-father.png" alt="Kilt Father"
+							     width="100" height="100"/>
 						</a>
 					</div>
 				</div>
@@ -1466,7 +1614,8 @@
 						<div class="section-header-inner">
 							<h3 class="section-title">Our Team</h3>
 							<div class="section-description-wrap">
-								<p class="section-description">We are a fast-paced team of blockchain network specialists,
+								<p class="section-description">We are a fast-paced team of blockchain network
+									specialists,
 									developers, designers from various backgrounds.</p>
 							</div>
 						</div>
@@ -1922,7 +2071,7 @@
 				</div>
 			</div>
 		</footer>
-</div>
+	</div>
 </div>
 <script src="./assets/libs/jquery/jquery-3.6.0.min.js"></script>
 <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1931,5 +2080,9 @@
 <script src="./assets/js/swiper-wrapper.js"></script>
 <script src="./assets/js/countdown-timer.js"></script>
 <script src="./assets/js/frontend.js?v=1.1"></script>
+<!-- BS:SNIPPET--><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.10'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+<!-- BS:SNIPPET:END-->
 </body>
 </html>
