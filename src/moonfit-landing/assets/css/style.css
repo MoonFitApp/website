@@ -2728,9 +2728,7 @@ blockquote {
     .tm-swiper .swiper-container:not(.swiper-container-initialized) .swiper-slide {
       margin-right: calc(1px * var(--gutter, 0)); }
     .tm-swiper .swiper-container .swiper-slide {
-      width: var(--slides-width, calc(
- (100% - ((var(--slides-view) - 1) * var(--gutter, 0) * 1px))
- / var(--slides-view))); }
+      width: var(--slides-width, calc( (100% - ((var(--slides-view) - 1) * var(--gutter, 0) * 1px)) / var(--slides-view))); }
   .tm-swiper .swiper-slide {
     box-sizing: border-box;
     text-align: left;
@@ -5942,17 +5940,29 @@ body {
       left: 11px; }
   .roadmap-background .roadmap-dot-light-5 {
     position: absolute;
-    right: calc(50% - 20px);
+    right: calc(50% + 235px);
     bottom: 1220px; }
+    .roadmap-background .roadmap-dot-light-5 img {
+      width: 103px; }
     .roadmap-background .roadmap-dot-light-5 .roadmap-light-vertical {
       position: absolute;
       top: -82px;
       left: 10px; }
   .roadmap-background .roadmap-dot-light-6 {
     position: absolute;
-    left: calc(50% + 116px);
+    left: calc(50% - 50px);
     bottom: 1260px; }
     .roadmap-background .roadmap-dot-light-6 .roadmap-light-vertical {
+      position: absolute;
+      top: -82px;
+      left: 10px; }
+  .roadmap-background .roadmap-dot-light-7 {
+    position: absolute;
+    left: calc(50% + 380px);
+    bottom: 1250px; }
+    .roadmap-background .roadmap-dot-light-7 img {
+      width: 188.5px; }
+    .roadmap-background .roadmap-dot-light-7 .roadmap-light-vertical {
       position: absolute;
       top: -82px;
       left: 10px; }
@@ -6053,15 +6063,17 @@ body {
       bottom: 1020px;
       transition: all 0.5s ease 0.6s; }
     .roadmap-background .roadmap-item.item-8 {
-      right: calc(50% + 15px);
+      right: calc(50% + 150px);
       bottom: 1331px;
       transition: all 0.5s ease 0.7s; }
-      .roadmap-background .roadmap-item.item-8 .roadmap-item-box {
-        width: 370px; }
     .roadmap-background .roadmap-item.item-9 {
-      left: calc(50% + 115px);
+      left: calc(50% - 50px);
       bottom: 1360px;
       transition: all 0.5s ease 0.8s; }
+    .roadmap-background .roadmap-item.item-10 {
+      right: calc(50% - 600px);
+      bottom: 1362px;
+      transition: all 0.5s ease 0.7s; }
 
 @media (max-width: 1500px) {
   .block-roadmap-wrap {
@@ -6106,7 +6118,9 @@ body {
     .roadmap-background .roadmap-dot-light-2,
     .roadmap-background .roadmap-dot-light-3,
     .roadmap-background .roadmap-dot-light-4,
-    .roadmap-background .roadmap-dot-light-5 {
+    .roadmap-background .roadmap-dot-light-5,
+    .roadmap-background .roadmap-dot-light-6,
+    .roadmap-background .roadmap-dot-light-7 {
       display: none; }
     .roadmap-background .roadmap-road {
       position: absolute;
@@ -6159,19 +6173,21 @@ body {
           right: 0;
           transform: translate(91px, -50%) rotate(-90deg);
           transform-origin: center; }
-      .roadmap-background .roadmap-item.item-2, .roadmap-background .roadmap-item.item-4, .roadmap-background .roadmap-item.item-6, .roadmap-background .roadmap-item.item-8 {
+      .roadmap-background .roadmap-item.item-2, .roadmap-background .roadmap-item.item-4, .roadmap-background .roadmap-item.item-6, .roadmap-background .roadmap-item.item-8, .roadmap-background .roadmap-item.item-10 {
         left: auto;
         right: auto;
         top: auto;
         bottom: auto;
         margin-top: 50px; }
-        .roadmap-background .roadmap-item.item-2 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-4 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-6 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-8 .roadmap-item-box .roadmap-light-vertical {
+        .roadmap-background .roadmap-item.item-2 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-4 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-6 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-8 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-10 .roadmap-item-box .roadmap-light-vertical {
           position: absolute;
           top: 50%;
           bottom: auto;
           left: 0;
           transform: translate(-91px, -50%) rotate(90deg);
           transform-origin: center; }
+      .roadmap-background .roadmap-item.item-9 {
+        margin-top: 50px; }
       .roadmap-background .roadmap-item.item-8 .roadmap-item-box {
         width: 350px; } }
 
@@ -6227,9 +6243,17 @@ body {
           left: 50%;
           transform: translate(-50%, 0);
           box-shadow: 0px 0px 7px 5px rgba(37, 240, 235, 0.4); }
-      .roadmap-background .roadmap-item.item-1 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-3 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-5 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-7 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-9 .roadmap-item-box .roadmap-light-vertical {
+      .roadmap-background .roadmap-item.item-1 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-3 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-5 .roadmap-item-box .roadmap-light-vertical, .roadmap-background .roadmap-item.item-7 .roadmap-item-box .roadmap-light-vertical {
         position: absolute;
         top: 50%;
+        bottom: auto;
+        left: 0;
+        right: auto;
+        transform: translate(-91px, -50%) rotate(90deg);
+        transform-origin: center; }
+      .roadmap-background .roadmap-item.item-9 .roadmap-item-box .roadmap-light-vertical {
+        position: absolute;
+        top: 80%;
         bottom: auto;
         left: 0;
         right: auto;
