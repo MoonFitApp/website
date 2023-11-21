@@ -182,9 +182,11 @@
 
     .roadmap-dot-light-5 {
         position: absolute;
-        right: calc(50% - 20px);
+        right: calc(50% + 235px);
         bottom: 1220px;
-
+        img{
+            width: 103px;
+        }
         .roadmap-light-vertical {
             position: absolute;
             top: -82px;
@@ -194,7 +196,7 @@
 
     .roadmap-dot-light-6 {
         position: absolute;
-        left: calc(50% + 116px);
+        left: calc(50% - 50px);
         bottom: 1260px;
 
         .roadmap-light-vertical {
@@ -203,6 +205,21 @@
             left: 10px;
         }
     }
+
+    .roadmap-dot-light-7 {
+        position: absolute;
+        left: calc(50% + 380px);
+        bottom: 1250px;
+        img{
+            width: 188.5px;
+        }
+        .roadmap-light-vertical {
+            position: absolute;
+            top: -82px;
+            left: 10px;
+        }
+    }
+
 
     .roadmap-item {
         position: absolute;
@@ -336,19 +353,26 @@
         }
 
         &.item-8 {
-            right: calc(50% + 15px);
+            right: calc(50% + 150px);
             bottom: 1331px;
             transition: all 0.5s ease 0.7s;
 
-            .roadmap-item-box {
-                width: 370px;
-            }
+            // .roadmap-item-box {
+            //     width: 370px;
+            // }
         }
 
         &.item-9 {
-            left: calc(50% + 115px);
+            left: calc(50% - 50px);
             bottom: 1360px;
             transition: all 0.5s ease 0.8s;
+        }
+
+        &.item-10{
+            right: calc(50% - 600px);
+        bottom:1362px;
+        transition: all 0.5s ease 0.7s; 
+
         }
     }
 }
@@ -420,7 +444,9 @@
         .roadmap-dot-light-2,
         .roadmap-dot-light-3,
         .roadmap-dot-light-4,
-        .roadmap-dot-light-5 {
+        .roadmap-dot-light-5,
+        .roadmap-dot-light-6,
+        .roadmap-dot-light-7 {
             display: none;
         }
 
@@ -499,11 +525,15 @@
                     }
                 }
             }
+            &.item-9{
+                margin-top: 50px;
+            }
 
             &.item-2,
             &.item-4,
             &.item-6,
-            &.item-8 {
+            &.item-8,
+            &.item-10 {
                 left: auto;
                 right: auto;
                 top: auto;

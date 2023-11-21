@@ -44,6 +44,11 @@
 					slidesPerGroup: itemsGroupMobile,
 					spaceBetween: gutterMobile,
 					resizeObserver: true,
+					loop: true,
+					autoplay: {
+						delay: 5000,
+						disableOnInteraction: false,
+					  },
 					breakpoints: {
 						// when window width is >=
 						361: {
